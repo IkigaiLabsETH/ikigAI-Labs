@@ -52,7 +52,7 @@ const Users = ({ className, classUsersItem, items, addUser }: UsersProps) => {
                                     Invite Ikigai Members
                                 </div>
                                 <div className="text-body-1 text-n-4 md:max-w-[20rem] md:mx-auto">
-                                    Invite Members to collab with ikiGAI 4.20
+                                    Invite Frens to collab with ikiGAI 4.20
                                 </div>
                             </div>
                             <Field

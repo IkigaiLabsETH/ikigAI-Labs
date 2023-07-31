@@ -1,24 +1,3 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-You can check if Yarn is installed on your PC with the command `yarn --version`
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 
 ### OpenAI Magic with GPT-4.20
@@ -69,6 +48,10 @@ Head to `./src/tools/` to add the option to use a prompt on the frontend:
 - Update the intended backend url call path on the prompt to `/helloworld`
 - Then import the new file add and it to the array on index.js
 
+// This frontend was our MVP, now time to stich our backend to the full frontend UI //
+// Focus on fullstack.js as example, as coding assistance is our core function for the app //
+// The ability to generate AI text, images, and video is fun but not essential for MVP //
+
 ### Part 2: Backend
 Head to `/routes/ai/` to add to the backend a new file
 
@@ -81,17 +64,4 @@ Restart the client and backend server. The new prompt should show up. I've added
 ### Part 3: Customise Promtps
 Udpate the backend and frontend queries to define the kind of prompt you want to query OpenAI with, as well as the kind of output you wish. There are examples for plaintext and listed prompts as part of this process.
 
-## Publishing the Project
 
-If you want to go live and publish the project, you will need a live domain and hosting. You can run NPM run build, and this will build the create react app the the build folder, which the web server will use as reference for the project online.
-
-## First Experiment WIP
-
-#chatGPT A "what's one of the hardest concepts for a human mind to visualize? Write a
-prompt for an Al image generator to try and create that image." Q "Imagine a vast, endless expanse of shimmering stars, stretching out in every direction as far as the eye can see. Each star is a different color and size, twinkling and pulsing with energy. In the center of this cosmic expanse, a glowing portal beckons, inviting you to step through and explore the infinite possibilities that lie beyond."
-
-Here's what it came up with, and here's how MidJourney visualized it:
-
-"Produce an art work from a text input. Use it to create your own unique piece of generative art to either just preview it or mint it as an NFT and store it on the Ethereum blockchain forever."
-
-#aiart #midjourney

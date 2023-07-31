@@ -71,7 +71,7 @@ export default function RootLayout({
                 />
                 <meta
                     property="og:description"
-                    content="Figma UI kit designed to enhance the functionality of ChatGPT"
+                    content="Designed to enhance the functionality of ChatGPT"
                 />
                 <meta property="og:site_name" content="ikigAI - Labs XYZ" />
                 <meta property="fb:admins" content="132951670226590" />
@@ -87,7 +87,7 @@ export default function RootLayout({
                 />
                 <meta
                     property="og:description"
-                    content="Figma UI kit designed to enhance the functionality of ChatGPT"
+                    content="Designed to enhance the functionality of ChatGPT"
                 />
                 {/* Open Graph data for Pinterest */}
                 <meta property="og:title" content="ikigAI - Labs XYZ" />
@@ -101,7 +101,7 @@ export default function RootLayout({
                 />
                 <meta
                     property="og:description"
-                    content="Figma UI kit designed to enhance the functionality of ChatGPT"
+                    content="Designed to enhance the functionality of ChatGPT"
                 />
             </head>
             <body

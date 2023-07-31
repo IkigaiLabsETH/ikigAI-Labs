@@ -16,7 +16,7 @@ const Logo = ({ className }: LogoProps) => {
             <Image
                 className="opacity-100 hidden dark:block md:!hidden"
                 src="/images/logo-light.svg"
-                width={152}
+                width={48}
                 height={48}
                 alt="ikigAI"
                 priority
@@ -24,7 +24,7 @@ const Logo = ({ className }: LogoProps) => {
             <Image
                 className="opacity-100 dark:hidden md:!hidden"
                 src="/images/logo-dark.svg"
-                width={152}
+                width={48}
                 height={48}
                 alt="ikigAI"
                 priority
@@ -32,8 +32,8 @@ const Logo = ({ className }: LogoProps) => {
             <Image
                 className="hidden w-full opacity-100 md:block"
                 src="/images/logo-without-text.svg"
-                width={32}
-                height={32}
+                width={33}
+                height={33}
                 alt="ikigAI"
                 priority
             />

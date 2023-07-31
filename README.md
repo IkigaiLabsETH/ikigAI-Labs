@@ -80,18 +80,3 @@ Restart the client and backend server. The new prompt should show up. I've added
 
 ### Part 3: Customise Promtps
 Udpate the backend and frontend queries to define the kind of prompt you want to query OpenAI with, as well as the kind of output you wish. There are examples for plaintext and listed prompts as part of this process.
-
-## Publishing the Project
-
-If you want to go live and publish the project, you will need a live domain and hosting. You can run NPM run build, and this will build the create react app the the build folder, which the web server will use as reference for the project online.
-
-## First Experiment WIP
-
-#chatGPT A "what's one of the hardest concepts for a human mind to visualize? Write a
-prompt for an Al image generator to try and create that image." Q "Imagine a vast, endless expanse of shimmering stars, stretching out in every direction as far as the eye can see. Each star is a different color and size, twinkling and pulsing with energy. In the center of this cosmic expanse, a glowing portal beckons, inviting you to step through and explore the infinite possibilities that lie beyond."
-
-Here's what it came up with, and here's how MidJourney visualized it:
-
-"Produce an art work from a text input. Use it to create your own unique piece of generative art to either just preview it or mint it as an NFT and store it on the Ethereum blockchain forever."
-
-#aiart #midjourney

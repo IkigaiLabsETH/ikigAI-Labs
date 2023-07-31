@@ -44,7 +44,7 @@ const NewChat = ({}: NewChatProps) => {
                         Unlock the power of AI
                     </div>
                     <div className="text-body-1 text-n-4">
-                        Meet the synapse of our ai chat app revolutionizing
+                        Meet the ikigAI of our ai chat app revolutionizing
                         conversations
                     </div>
                 </div>

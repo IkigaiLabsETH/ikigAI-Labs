@@ -29,7 +29,7 @@ const CreateChatBotPage = () => {
     const [name, setName] = useState<string>("UI8 Bot");
     const [bot, setBot] = useState<any>(bots[0]);
     const [message, setMessage] = useState<string>(
-        "Hello, I’m Synapse a large language model designed to answer questions and provide information on a wide range of topics. How can I assist you today?"
+        "Hello, I’m ikigAI a large language model designed to answer questions and provide information on a wide range of topics. How can I assist you today?"
     );
     const [prompt, setPrompt] = useState<string>(
         "What is the capital of France Can you explain the concept of machine learning What is the weather forecast for tomorrow in New York City"
@@ -103,7 +103,7 @@ const CreateChatBotPage = () => {
                 <Field
                     className="mb-12 md:mb-8"
                     label="Suggest prompts"
-                    placeholder="I.g. What is Synapse UI kit"
+                    placeholder="I.g. What is ikigAI UI kit"
                     note="Enter each message in a new line."
                     value={prompt}
                     onChange={(e: any) => setPrompt(e.target.value)}

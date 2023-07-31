@@ -51,11 +51,11 @@ const SharePage = () => {
                             content={
                                 <>
                                     Text-to-speech voice: <br></br> <br></br>
-                                    Synapse is an AI chat app UI Kit designed by
+                                    ikigAI is an AI chat app UI Kit designed by
                                     the UI8 Team. It boasts a stunning design
                                     and powerful features, making it an ideal
                                     choice for developers looking to build chat
-                                    applications with ease. With Synapse, you
+                                    applications with ease. With ikigAI, you
                                     can quickly create chat interfaces that are
                                     both intuitive and visually appealing,
                                     thanks to its comprehensive set of
@@ -63,7 +63,7 @@ const SharePage = () => {
                                     elements. Whether you&apos;re building a
                                     messaging app, a customer support platform,
                                     or any other kind of chat-based application,
-                                    Synapse has everything you need to get
+                                    ikigAI has everything you need to get
                                     started.
                                 </>
                             }
@@ -82,7 +82,7 @@ const SharePage = () => {
                         className="flex btn-gradient w-full max-w-[77rem] mx-auto mt-10 md:m-5 md:mb-0 md:w-[calc(100%-2.5rem)]"
                         href="/entry"
                     >
-                        Try Synapse today
+                        Try ikigAI today
                     </Link>
                 )}
             </div>

@@ -28,7 +28,7 @@ const Create = ({}: CreateProps) => {
                 required
             />
             <button className="btn-gradient w-full" type="submit">
-                Join Synapse
+                Join ikigAI
             </button>
             <div className="mt-4 text-center text-small text-n-4">
                 By creating an account, you agree to our Terms of Service and

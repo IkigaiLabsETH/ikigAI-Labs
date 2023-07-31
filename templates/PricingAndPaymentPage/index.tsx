@@ -43,7 +43,7 @@ const CreateChatBotPage = () => {
                                 Unlock the power of AI
                             </div>
                             <div className="mb-15 text-body-1 text-n-4 xl:mb-8">
-                                Meet the synapse of our ai chat app
+                                Meet the ikigAI of our ai chat app
                                 revolutionizing conversations
                             </div>
                             <Tabs

@@ -55,7 +55,7 @@ const PreviewChatBot = ({}: PreviewChatBotProps) => {
                         </div>
                         <div className="w-[calc(100%-2rem)] pl-6">
                             <div className="mb-6 text-n-6 dark:text-n-1">
-                                Hello, I’m Synapse a large language model
+                                Hello, I’m ikigAI a large language model
                                 designed to answer questions and provide
                                 information on a wide range of topics. How can I
                                 assist you today?

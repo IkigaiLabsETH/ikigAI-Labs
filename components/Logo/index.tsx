@@ -18,7 +18,7 @@ const Logo = ({ className }: LogoProps) => {
                 src="/images/logo-light.svg"
                 width={152}
                 height={48}
-                alt="Synapse"
+                alt="ikigAI"
                 priority
             />
             <Image
@@ -26,7 +26,7 @@ const Logo = ({ className }: LogoProps) => {
                 src="/images/logo-dark.svg"
                 width={152}
                 height={48}
-                alt="Synapse"
+                alt="ikigAI"
                 priority
             />
             <Image
@@ -34,7 +34,7 @@ const Logo = ({ className }: LogoProps) => {
                 src="/images/logo-without-text.svg"
                 width={32}
                 height={32}
-                alt="Synapse"
+                alt="ikigAI"
                 priority
             />
         </Link>

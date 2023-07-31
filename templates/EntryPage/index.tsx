@@ -46,7 +46,7 @@ const EntryPage = () => {
                 </button>
                 <div className="max-w-[25rem] m-auto py-14 md:pt-20 md:pb-0">
                     <div className="mb-8 text-center text-h3">
-                        {create ? "Welcome to Synapse" : "Sign in"}
+                        {create ? "Welcome to ikigAI" : "Sign in"}
                     </div>
                     <div className="">
                         <button className="btn border-2 border-n-3 w-full rounded-xl mb-3 hover:bg-n-3 dark:border-n-5 dark:hover:bg-n-5">

@@ -14,11 +14,11 @@ const Foot = ({}: FootProps) => (
                 Apply promo code
             </button>
             <div className="mb-4 text-small text-n-4">
-                By clicking &quot;Start Synapse Pro plan&quot;, you agree to be
+                By clicking &quot;Start ikigAI Pro plan&quot;, you agree to be
                 charged $399 every month, unless you cancel.
             </div>
             <button className="btn-gradient" type="submit">
-                Start Synapse Pro plan
+                Start ikigAI Pro plan
             </button>
         </div>
     </div>

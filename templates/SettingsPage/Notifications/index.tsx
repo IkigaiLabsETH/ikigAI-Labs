@@ -38,7 +38,7 @@ const Notifications = ({}: NotificationsProps) => {
         },
         {
             id: "2",
-            title: "From Synapse",
+            title: "From ikigAI",
             checkboxs: [{ id: "0", title: "Mentioned", isChecked: true }],
         },
     ]);

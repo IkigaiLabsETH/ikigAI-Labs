@@ -62,7 +62,7 @@ const AddFile = ({}: AddFileProps) => {
                             <Icon className="w-8 h-8" name="upload" />
                         </div>
                         <div className="mb-2 text-h3 md:text-h4">
-                            Upload to Synapse
+                            Upload to ikigAI
                         </div>
                         <div className="text-base-1">
                             You can add prompt before upload

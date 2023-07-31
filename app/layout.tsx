@@ -25,8 +25,8 @@ const sourceCodePro = Source_Code_Pro({
 });
 
 export const metadata = {
-    title: "Synapse",
-    description: "Synapse - AI UI Kit",
+    title: "ikigAI",
+    description: "ikigAI - Labs XYZ",
     icons: {
         icon: "./favicon.ico",
     },
@@ -44,11 +44,11 @@ export default function RootLayout({
                     name="description"
                     content="Figma UI kit designed to enhance the functionality of ChatGPT"
                 />
-                <meta name="product-name" content="Synapse - AI UI Kit" />
+                <meta name="product-name" content="ikigAI - Labs XYZ" />
                 {/* Twitter Card data */}
                 <meta name="twitter:card" content="summary" />
                 <meta name="twitter:site" content="@ui8" />
-                <meta name="twitter:title" content="Synapse - AI UI Kit" />
+                <meta name="twitter:title" content="ikigAI - Labs XYZ" />
                 <meta
                     name="twitter:description"
                     content="Figma UI kit designed to enhance the functionality of ChatGPT"
@@ -59,11 +59,11 @@ export default function RootLayout({
                     content="%PUBLIC_URL%/twitter-card.png"
                 />
                 {/* Open Graph data for Facebook */}
-                <meta property="og:title" content="Synapse - AI UI Kit" />
+                <meta property="og:title" content="ikigAI - Labs XYZ" />
                 <meta property="og:type" content="Article" />
                 <meta
                     property="og:url"
-                    content="https://ui8.net/ui8/products/synapse-ai-ui-kit"
+                    content="https://ui8.net/ui8/products/ikigAI-ai-ui-kit"
                 />
                 <meta
                     property="og:image"
@@ -73,13 +73,13 @@ export default function RootLayout({
                     property="og:description"
                     content="Figma UI kit designed to enhance the functionality of ChatGPT"
                 />
-                <meta property="og:site_name" content="Synapse - AI UI Kit" />
+                <meta property="og:site_name" content="ikigAI - Labs XYZ" />
                 <meta property="fb:admins" content="132951670226590" />
                 {/* Open Graph data for LinkedIn */}
-                <meta property="og:title" content="Synapse - AI UI Kit" />
+                <meta property="og:title" content="ikigAI - Labs XYZ" />
                 <meta
                     property="og:url"
-                    content="https://ui8.net/ui8/products/synapse-ai-ui-kit"
+                    content="https://ui8.net/ui8/products/ikigAI-ai-ui-kit"
                 />
                 <meta
                     property="og:image"
@@ -90,10 +90,10 @@ export default function RootLayout({
                     content="Figma UI kit designed to enhance the functionality of ChatGPT"
                 />
                 {/* Open Graph data for Pinterest */}
-                <meta property="og:title" content="Synapse - AI UI Kit" />
+                <meta property="og:title" content="ikigAI - Labs XYZ" />
                 <meta
                     property="og:url"
-                    content="https://ui8.net/ui8/products/synapse-ai-ui-kit"
+                    content="https://ui8.net/ui8/products/ikigAI-ai-ui-kit"
                 />
                 <meta
                     property="og:image"

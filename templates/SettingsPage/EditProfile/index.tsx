@@ -82,7 +82,7 @@ const EditProfile = ({}: EditProfileProps) => {
             <Field
                 className="mb-10 lg:mb-8"
                 label="Bio"
-                placeholder="I.g. What is Synapse UI kit"
+                placeholder="I.g. What is ikigAI UI kit"
                 note="Enter each message in a new line."
                 value={bio}
                 onChange={(e: any) => setBio(e.target.value)}

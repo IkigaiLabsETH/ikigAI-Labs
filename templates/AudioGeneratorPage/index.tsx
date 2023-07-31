@@ -16,17 +16,13 @@ const AudioGeneratorPage = () => {
                     content={
                         <>
                             Text-to-speech voice: <br></br> <br></br>
-                            ikigAI is an AI chat app UI Kit designed by the UI8
-                            Team. It boasts a stunning design and powerful
+                            ikigAI is an AI chat app. It boasts a stunning design and powerful
                             features, making it an ideal choice for developers
                             looking to build chat applications with ease. With
                             ikigAI, you can quickly create chat interfaces that
                             are both intuitive and visually appealing, thanks to
                             its comprehensive set of pre-designed components and
-                            customizable elements. Whether you&apos;re building
-                            a messaging app, a customer support platform, or any
-                            other kind of chat-based application, ikigAI has
-                            everything you need to get started.
+                            customizable elements.
                         </>
                     }
                 />

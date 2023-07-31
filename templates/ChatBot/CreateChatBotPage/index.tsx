@@ -64,7 +64,7 @@ const CreateChatBotPage = () => {
                                 <Field
                                     className="w-[calc(50%-0.75rem)] mx-1.5 md:w-full md:mx-0 md:mb-3"
                                     label="Bot name"
-                                    placeholder="I.g. UI8 Marketplace"
+                                    placeholder="I.g. ikigAI Marketplace"
                                     value={name}
                                     onChange={(e: any) =>
                                         setName(e.target.value)

@@ -10,12 +10,12 @@ const Upload = ({}: UploadProps) => {
         {
             title: "Facebook",
             image: "/images/facebook.svg",
-            url: "https://www.facebook.com/ui8.net/",
+            url: "https://www.facebook.com/livethelife",
         },
         {
             title: "Twitter",
             image: "/images/twitter.svg",
-            url: "https://twitter.com/ui8",
+            url: "https://twitter.com/livethelifetv",
         },
     ];
 

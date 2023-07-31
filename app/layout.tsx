@@ -47,13 +47,13 @@ export default function RootLayout({
                 <meta name="product-name" content="ikigAI - Labs XYZ" />
                 {/* Twitter Card data */}
                 <meta name="twitter:card" content="summary" />
-                <meta name="twitter:site" content="@ui8" />
+                <meta name="twitter:site" content="@ikigailabseth" />
                 <meta name="twitter:title" content="ikigAI - Labs XYZ" />
                 <meta
                     name="twitter:description"
                     content="Figma UI kit designed to enhance the functionality of ChatGPT"
                 />
-                <meta name="twitter:creator" content="@ui8" />
+                <meta name="twitter:creator" content="@ikigailabseth" />
                 <meta
                     name="twitter:image"
                     content="%PUBLIC_URL%/twitter-card.png"
@@ -63,7 +63,7 @@ export default function RootLayout({
                 <meta property="og:type" content="Article" />
                 <meta
                     property="og:url"
-                    content="https://ui8.net/ui8/products/ikigAI-ai-ui-kit"
+                    content="https://livethelife.tv"
                 />
                 <meta
                     property="og:image"
@@ -79,7 +79,7 @@ export default function RootLayout({
                 <meta property="og:title" content="ikigAI - Labs XYZ" />
                 <meta
                     property="og:url"
-                    content="https://ui8.net/ui8/products/ikigAI-ai-ui-kit"
+                    content="https://livethelife.tv"
                 />
                 <meta
                     property="og:image"
@@ -93,7 +93,7 @@ export default function RootLayout({
                 <meta property="og:title" content="ikigAI - Labs XYZ" />
                 <meta
                     property="og:url"
-                    content="https://ui8.net/ui8/products/ikigAI-ai-ui-kit"
+                    content="https://livethelife.tv"
                 />
                 <meta
                     property="og:image"

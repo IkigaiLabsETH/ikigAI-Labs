@@ -25,9 +25,9 @@ export const applications = [
     },
     {
         id: "4",
-        title: "UI8",
+        title: "LTL",
         version: "version 16.32.480",
-        image: "/images/ui8.svg",
+        image: "/images/discord.svg",
     },
     {
         id: "5",

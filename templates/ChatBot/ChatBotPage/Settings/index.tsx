@@ -26,7 +26,7 @@ const bots = [
 ];
 
 const CreateChatBotPage = () => {
-    const [name, setName] = useState<string>("UI8 Bot");
+    const [name, setName] = useState<string>("ikigAI Bot");
     const [bot, setBot] = useState<any>(bots[0]);
     const [message, setMessage] = useState<string>(
         "Hello, I’m ikigAI a large language model designed to answer questions and provide information on a wide range of topics. How can I assist you today?"
@@ -46,7 +46,7 @@ const CreateChatBotPage = () => {
                     <Field
                         className="w-[calc(50%-0.75rem)] mx-1.5 md:w-full md:mx-0 md:mb-3"
                         label="Bot name"
-                        placeholder="I.g. UI8 Marketplace"
+                        placeholder="I.g. ikigAI Marketplace"
                         value={name}
                         onChange={(e: any) => setName(e.target.value)}
                         required

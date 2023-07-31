@@ -35,7 +35,7 @@ const HomePage = () => {
                     />
                 </div>
                 <div className="flex justify-between mb-8 md:block">
-                    <div className="text-h2 md:mb-5 md:text-h4">ChatGPT 4</div>
+                    <div className="text-h2 md:mb-5 md:text-h4">ChatGPT 4.20</div>
                     <Link className="btn-purple mt-1" href="/new-chat">
                         <span>Create new chat</span>
                         <Icon name="plus" />
@@ -44,9 +44,9 @@ const HomePage = () => {
                 <div className="flex mb-13 lg:relative lg:block lg:pb-20">
                     <div className="grow">
                         <div className="mb-5 text-base-2 text-n-4">
-                            ikigAI assistant created a bespoke model that surpasses a generic ChatGPT in
+                            ikigAI assistant is traing a bespoke ML model that surpasses any generic ChatGPT in
                             several areas, like creative coding, design,
-                            content, and what not.
+                            content, and above all, context.
                         </div>
                         <Users
                             className="mb-8"

@@ -28,19 +28,11 @@ const ChatExport = ({}: ChatExportProps) => {
     const [checkboxes, setCheckboxes] = useState([
         {
             id: "0",
-            title: "ChatGPT 4",
+            title: "ChatGPT 4.20",
             conversations: 256,
             image: "/images/logo-1.svg",
             color: "#DAB17F",
             isChecked: false,
-        },
-        {
-            id: "1",
-            title: "ChatGPT 3",
-            conversations: 128,
-            image: "/images/logo-1.svg",
-            color: "#1C43C7",
-            isChecked: true,
         },
         {
             id: "2",
@@ -72,14 +64,6 @@ const ChatExport = ({}: ChatExportProps) => {
             conversations: 512,
             image: "/images/logo-1.svg",
             color: "#db7d2f",
-            isChecked: false,
-        },
-        {
-            id: "6",
-            title: "ChatGPT 4.1",
-            conversations: 1024,
-            image: "/images/logo-1.svg",
-            color: "#a10f0f",
             isChecked: false,
         },
     ]);

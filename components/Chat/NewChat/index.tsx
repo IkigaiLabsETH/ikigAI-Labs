@@ -41,7 +41,7 @@ const NewChat = ({}: NewChatProps) => {
             <div className="max-w-[37.5rem] mx-auto 4xl:max-w-[34.5rem]">
                 <div className="mb-12 text-center md:mb-8">
                     <div className="mb-2 text-h2 lg:text-h3 md:max-w-[16rem] md:mx-auto">
-                        ikigAI Labs XYZ Coding Assistant
+                        ikigAI Labs Assistant
                     </div>
                     <div className="text-body-1 text-n-4">
                         Our bespoke ai assisant understands our codebase deeply.

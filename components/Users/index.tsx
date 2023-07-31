@@ -49,16 +49,16 @@ const Users = ({ className, classUsersItem, items, addUser }: UsersProps) => {
                         >
                             <div className="mb-10 text-center">
                                 <div className="mb-2 text-h4">
-                                    Invite team members
+                                    Invite Ikigai Founders
                                 </div>
                                 <div className="text-body-1 text-n-4 md:max-w-[20rem] md:mx-auto">
-                                    Invite team member to chat with ChatGPT-4
+                                    Invite co-Founders to collab with ikiGAI-4.20
                                 </div>
                             </div>
                             <Field
                                 className="mb-4"
                                 label="Email address"
-                                placeholder="I.g. tam@hey.com"
+                                placeholder="I.g. gn@ikigailabs.xyz"
                                 type="email"
                                 value={email}
                                 onChange={(e: any) => setEmail(e.target.value)}
@@ -67,7 +67,7 @@ const Users = ({ className, classUsersItem, items, addUser }: UsersProps) => {
                             <Field
                                 className="mb-4"
                                 label="Email address"
-                                placeholder="I.g. tam@hey.com"
+                                placeholder="I.g. gm@ikigailabs.xyz"
                                 type="email"
                                 value={email1}
                                 onChange={(e: any) => setEmail1(e.target.value)}

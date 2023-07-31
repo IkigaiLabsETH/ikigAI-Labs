@@ -7,8 +7,8 @@ type EditProfileProps = {};
 
 const EditProfile = ({}: EditProfileProps) => {
     const [objectURL, setObjectURL] = useState<any>("/images/avatar.jpg");
-    const [name, setName] = useState<string>("Tran Mau Tri Tam");
-    const [location, setLocation] = useState<string>("Saigon, Vietnam");
+    const [name, setName] = useState<string>("GM GM Degen");
+    const [location, setLocation] = useState<string>("Anon, Web3");
     const [bio, setBio] = useState<string>("");
 
     const handleUpload = (e: any) => {
@@ -82,7 +82,7 @@ const EditProfile = ({}: EditProfileProps) => {
             <Field
                 className="mb-10 lg:mb-8"
                 label="Bio"
-                placeholder="I.g. What is ikigAI UI kit"
+                placeholder="I.g. What is ikigAI"
                 note="Enter each message in a new line."
                 value={bio}
                 onChange={(e: any) => setBio(e.target.value)}

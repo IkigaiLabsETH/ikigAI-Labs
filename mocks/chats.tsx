@@ -143,7 +143,7 @@ export const directions = [
 export const chatRequest = [
     {
         id: "0",
-        title: "Upload form in HTML, CSS and JS",
+        title: "Upload form in Typescript, TailwindCCS, and React",
         image: "/images/icons/code-circle.svg",
         lastModified: "1 min ago",
         created: "5 mins ago",
@@ -158,7 +158,7 @@ export const chatRequest = [
     },
     {
         id: "1",
-        title: "How do I create a website",
+        title: "How do I create a mint page",
         image: "/images/icons/site.svg",
         lastModified: "3 min ago",
         created: "10 mins ago",
@@ -173,7 +173,7 @@ export const chatRequest = [
     },
     {
         id: "2",
-        title: "Can you explain the concept of artificial intelligence?",
+        title: "Can you explain the concept of AI?",
         image: "/images/icons/message-chat-circle.svg",
         lastModified: "10 min ago",
         created: "35 mins ago",
@@ -188,7 +188,7 @@ export const chatRequest = [
     },
     {
         id: "3",
-        title: "Marketing video generation",
+        title: "Art video generation",
         image: "/images/icons/video-recorder.svg",
         lastModified: "45 min ago",
         created: "1 hour ago",
@@ -203,7 +203,7 @@ export const chatRequest = [
     },
     {
         id: "4",
-        title: "Upload form in HTML, CSS and JS",
+        title: "Upload form in P5js",
         image: "/images/icons/code-snippet.svg",
         lastModified: "1 hour ago",
         created: "5 hour ago",
@@ -221,7 +221,7 @@ export const chatRequest = [
 export const historyChat = [
     {
         id: "0",
-        title: "Business man talking avatar",
+        title: "Curator talking about Gen Art",
         color: "#BE87FF",
         url: "/video-generation",
     },
@@ -239,7 +239,7 @@ export const historyChat = [
     },
     {
         id: "3",
-        title: "Education feedback",
+        title: "Art feedback",
         color: "#FF6C3E",
         url: "/education-feedback",
     },
@@ -251,19 +251,19 @@ export const historyChat = [
     },
     {
         id: "5",
-        title: "Python function",
+        title: "P5js function",
         color: "#4BAB71",
         url: "/code-generator",
     },
     {
         id: "6",
-        title: "Social media post",
+        title: "Content Creation",
         color: "#FF6C3E",
         url: "/social",
     },
     {
         id: "7",
-        title: "Statistics Dribbble portfolio",
+        title: "Statistics",
         color: "#FF66C2",
         url: "/statistics",
     },

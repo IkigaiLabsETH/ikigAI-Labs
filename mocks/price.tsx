@@ -10,7 +10,7 @@ export const price = [
         current: true,
         details: [
             {
-                title: "2 chatbots",
+                title: "1 chatbot",
                 disabled: false,
             },
             {

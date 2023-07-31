@@ -23,10 +23,4 @@ export const applications = [
         version: "version 16.32.480",
         image: "/images/discord.svg",
     },
-    {
-        id: "4",
-        title: "LTL",
-        version: "version 16.32.480",
-        image: "/images/discord.svg",
-    },
 ];

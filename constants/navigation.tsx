@@ -1,15 +1,9 @@
 export const chats = [
     {
         id: "0",
-        title: "ChatGPT 4",
+        title: "ChatGPT 4.20",
         image: "/images/logo-1.svg",
         color: "#DAB17F",
-    },
-    {
-        id: "1",
-        title: "ChatGPT 3",
-        image: "/images/logo-1.svg",
-        color: "#1C43C7",
     },
     {
         id: "2",
@@ -28,12 +22,6 @@ export const chats = [
         title: "Art Collector",
         image: "/images/logo-light-3.svg",
         color: "#f9d500",
-    },
-    {
-        id: "5",
-        title: "NFT Marketplace",
-        image: "/images/logo-1.svg",
-        color: "#db7d2f",
     },
 ];
 

@@ -1,27 +1,27 @@
 export const chatActions = [
     {
         id: "0",
-        title: "Improve writing",
+        title: "Optimize code",
     },
     {
         id: "1",
-        title: "Translate",
+        title: "Add comments",
     },
     {
         id: "2",
-        title: "Change tone",
+        title: "Change color palette",
     },
     {
         id: "3",
-        title: "Fix spelling and grammar",
+        title: "Fix this bug",
     },
     {
         id: "4",
-        title: "Improve writing",
+        title: "Improve P5js script",
     },
     {
         id: "5",
-        title: "Improve writing",
+        title: "Refactor this code",
     },
 ];
 

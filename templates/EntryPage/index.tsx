@@ -11,16 +11,16 @@ import Create from "./Create";
 const itemsEntry = [
     {
         content:
-            "The potential to enhance customer service and improve business efficiency",
+            "The bespoke AI assistant at ikigAI Labs XYZ improves business collabs",
         image: "/images/slider-pic-1.jpg",
     },
     {
-        content: "Revolutionize your chats with AI-powered conversations.",
+        content: "Code with AI-powered conversations.",
         image: "/images/slider-pic-2.jpg",
     },
     {
         content:
-            "The potential to enhance customer service and improve business efficiency",
+            "Enhance the creator, curator, and collector UX",
         image: "/images/slider-pic-1.jpg",
     },
 ];

@@ -21,7 +21,7 @@ const HomePage = () => {
                     className="object-cover"
                     src="/images/bg.jpg"
                     fill
-                    alt=""
+                    alt="ikigAI Labs XYZ"
                 />
             </div>
             <div className="relative max-w-[72rem] w-full -mt-16 mx-auto px-12 pb-16 2xl:pb-12 xl:px-8 xl:pb-8 md:-mt-10 md:px-5 md:pb-5">
@@ -31,7 +31,7 @@ const HomePage = () => {
                         src="/images/logo-1.svg"
                         width={64}
                         height={64}
-                        alt=""
+                        alt="ikigAI Labs XYZ"
                     />
                 </div>
                 <div className="flex justify-between mb-8 md:block">
@@ -44,9 +44,9 @@ const HomePage = () => {
                 <div className="flex mb-13 lg:relative lg:block lg:pb-20">
                     <div className="grow">
                         <div className="mb-5 text-base-2 text-n-4">
-                            OpenAI has created a model that surpasses ChatGPT in
-                            several areas, like coding and design,
-                            creative content, and what not.
+                            ikigAI assistant created a bespoke model that surpasses a generic ChatGPT in
+                            several areas, like creative coding, design,
+                            content, and what not.
                         </div>
                         <Users
                             className="mb-8"
@@ -71,7 +71,7 @@ const HomePage = () => {
                         <div className="flex justify-between items-center mb-3 pb-3 border-b border-n-3 dark:border-n-5">
                             <div className="text-base-2 text-n-4">Version</div>
                             <div className="px-2 rounded-md bg-n-7 text-base-2 font-semibold text-n-1">
-                                1.5.2
+                                1.6.9
                             </div>
                         </div>
                         <div className="flex justify-between items-center mb-3 pb-3 border-b border-n-3 dark:border-n-5">

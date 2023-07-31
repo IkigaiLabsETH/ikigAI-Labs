@@ -45,8 +45,8 @@ const HomePage = () => {
                     <div className="grow">
                         <div className="mb-5 text-base-2 text-n-4">
                             OpenAI has created a model that surpasses ChatGPT in
-                            several areas, like math and physics equations,
-                            creative writing, and other difficult tasks.
+                            several areas, like coding and design,
+                            creative content, and what not.
                         </div>
                         <Users
                             className="mb-8"

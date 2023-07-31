@@ -41,12 +41,12 @@ export const chatList = [
     {
         id: "0",
         title: "Create",
-        image: "/images/chat-pic-1.svg",
+        image: "/images/chat-pic-2.svg",
     },
     {
         id: "1",
         title: "Curate",
-        image: "/images/chat-pic-2.svg",
+        image: "/images/chat-pic-1.svg",
     },
     {
         id: "2",

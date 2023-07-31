@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+  
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
 @layer components {
     div.react-tooltip {
         @apply px-2 py-1 rounded-md text-smaller text-n-1 shadow-[0_0.25rem_0.25rem_rgba(0,0,0,0.25),inset_0_0_0_0.0625rem_rgba(255,255,255,0.05),inset_0_-0.0625rem_0.125rem_rgba(255,255,255,0.12)] md:max-w-[12rem] dark:shadow-[0_0.25rem_0.25rem_rgba(0,0,0,0.25),inset_0_0_0_0.0625rem_rgba(255,255,255,0.05),inset_0_-0.0625rem_0.125rem_rgba(255,255,255,0.05)];

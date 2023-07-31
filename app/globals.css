@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    div.react-tooltip {
+        @apply px-2 py-1 rounded-md text-smaller text-n-1 shadow-[0_0.25rem_0.25rem_rgba(0,0,0,0.25),inset_0_0_0_0.0625rem_rgba(255,255,255,0.05),inset_0_-0.0625rem_0.125rem_rgba(255,255,255,0.12)] md:max-w-[12rem] dark:shadow-[0_0.25rem_0.25rem_rgba(0,0,0,0.25),inset_0_0_0_0.0625rem_rgba(255,255,255,0.05),inset_0_-0.0625rem_0.125rem_rgba(255,255,255,0.05)];
+    }
+    .splide__arrows.splide__arrows_custom {
+        @apply absolute top-0 right-0 flex space-x-2;
+    }
+    .splide__arrows.splide__arrows_custom .splide__arrow {
+        @apply static w-10 h-10 bg-transparent translate-y-0 fill-n-4 hover:fill-primary-3;
+    }
+    .splide__arrows.splide__arrows_custom .splide__arrow:disabled {
+        @apply opacity-40;
+    }
+    .splide__arrows.splide__arrows_custom .splide__arrow svg {
+        @apply w-6 h-6 fill-inherit transition-colors;
+    }
+    .slider-entry .splide__pagination {
+        @apply bottom-14 z-2;
+    }
+    .slider-entry .splide__list {
+        @apply h-auto max-w-full;
+    }
+    .slider-entry .splide__pagination .splide__pagination__page {
+        @apply w-3 h-3 mx-2 my-0 border-2 border-solid border-n-1 bg-transparent opacity-100 transition-colors;
+    }
+    .slider-entry .splide__pagination .splide__pagination__page.is-active {
+        @apply scale-100 bg-n-1;
+    }
+
+    .react-datepicker-wrapper-custom {
+        @apply w-full;
+    }
+    .react-datepicker {
+        @apply !border-0 !rounded-lg !font-inter shadow-modal overflow-hidden dark:bg-n-7 dark:!border-n-5;
+    }
+    .react-datepicker .react-datepicker__header {
+        @apply bg-transparent border-none;
+    }
+    .react-datepicker .react-datepicker__current-month {
+        @apply text-base-2 font-semibold text-n-4;
+    }
+    .react-datepicker .react-datepicker__navigation {
+        @apply top-1.5;
+    }
+    .react-datepicker .react-datepicker__navigation-icon::before {
+        @apply transition-colors dark:border-n-4;
+    }
+    .react-datepicker
+        .react-datepicker__navigation:hover
+        .react-datepicker__navigation-icon::before {
+        @apply dark:border-n-3;
+    }
+    .react-datepicker .react-datepicker__triangle {
+        @apply hidden;
+    }
+    .react-datepicker .react-datepicker__day-name {
+        @apply pt-2 text-small font-semibold text-n-4;
+    }
+    .react-datepicker .react-datepicker__day {
+        @apply py-[0.15rem] rounded text-small transition-colors dark:text-n-1 dark:hover:bg-n-6 dark:hover:text-n-1;
+    }
+    .react-datepicker .react-datepicker__day.past {
+        @apply text-n-4 pointer-events-none;
+    }
+    .react-datepicker .react-datepicker__day--today {
+        @apply bg-n-3 text-n-7 font-medium;
+    }
+    .react-datepicker .react-datepicker__day--today.past {
+        @apply text-n-7 pointer-events-auto;
+    }
+    .react-datepicker .react-datepicker__day--selected {
+        @apply bg-primary-3 !text-n-1;
+    }
+    .react-datepicker .react-datepicker__day--keyboard-selected {
+        @apply bg-transparent;
+    }
+    .react-datepicker .react-datepicker__day--outside-month {
+        @apply opacity-0 invisible;
+    }
+    .react-datepicker .react-datepicker__time-container,
+    .react-datepicker
+        .react-datepicker__time-container
+        .react-datepicker__time
+        .react-datepicker__time-box {
+        @apply w-[15rem] text-left dark:bg-n-7 dark:border-n-5 !rounded-lg;
+    }
+    .react-datepicker
+        .react-datepicker__time-container
+        .react-datepicker__time {
+        @apply bg-transparent;
+    }
+    .react-datepicker .react-datepicker__header--time {
+        @apply hidden;
+    }
+    .react-datepicker .react-datepicker__time-list-item {
+        @apply transition-colors;
+    }
+    .react-datepicker
+        .react-datepicker__time-container
+        .react-datepicker__time
+        .react-datepicker__time-box
+        ul.react-datepicker__time-list
+        li.react-datepicker__time-list-item {
+        @apply pl-4 leading-normal dark:hover:bg-n-6 dark:text-n-1 dark:hover:text-n-1;
+    }
+    .react-datepicker
+        .react-datepicker__time-container
+        .react-datepicker__time
+        .react-datepicker__time-box
+        ul.react-datepicker__time-list
+        li.react-datepicker__time-list-item--selected {
+        @apply bg-primary-3 text-n-1 dark:text-n-1;
+    }
+}

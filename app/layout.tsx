@@ -42,7 +42,7 @@ export default function RootLayout({
             <head>
                 <meta
                     name="description"
-                    content="Figma UI kit designed to enhance the functionality of ChatGPT"
+                    content="ikigAI Labs XYZ designed a bespoke AI-assistantto enhance the functionality of ChatGPT with context about the creating and curation of Digital Art, writing smart contracts, editorial content or code for the Ikigai Labs XYZ web3 app."
                 />
                 <meta name="product-name" content="ikigAI - Labs XYZ" />
                 {/* Twitter Card data */}

@@ -127,7 +127,7 @@ const CreateChatBotPage = () => {
                             <Field
                                 className="mb-12 md:mb-8"
                                 label="Suggest prompts"
-                                placeholder="I.g. What is ikigAI UI kit"
+                                placeholder="I.g. What is ikigAI"
                                 note="Enter each message in a new line."
                                 value={prompt}
                                 onChange={(e: any) => setPrompt(e.target.value)}

@@ -51,14 +51,6 @@ export const directions = [
         url: "/code-generator",
     },
     {
-        id: "3",
-        title: "Education feedback",
-        image: "/images/trophy.svg",
-        color: "#7C878E",
-        type: "super",
-        url: "/education-feedback",
-    },
-    {
         id: "4",
         title: "Video generator",
         image: "/images/video.svg",
@@ -91,14 +83,6 @@ export const directions = [
         url: "/code-generator",
     },
     {
-        id: "8",
-        title: "Education feedback",
-        image: "/images/trophy.svg",
-        color: "#7C878E",
-        type: "high",
-        url: "/education-feedback",
-    },
-    {
         id: "9",
         title: "Photo generator",
         image: "/images/photo.svg",
@@ -115,28 +99,12 @@ export const directions = [
         url: "/video-generation",
     },
     {
-        id: "11",
-        title: "Education feedback",
-        image: "/images/trophy.svg",
-        color: "#7C878E",
-        type: "medium",
-        url: "/education-feedback",
-    },
-    {
         id: "12",
         title: "Code generator",
         image: "/images/code.svg",
         color: "#1F82FF",
         type: "low",
         url: "/code-generator",
-    },
-    {
-        id: "13",
-        title: "Education feedback",
-        image: "/images/trophy.svg",
-        color: "#7C878E",
-        type: "low",
-        url: "/education-feedback",
     },
 ];
 
@@ -236,12 +204,6 @@ export const historyChat = [
         title: "Text-to-speech voice",
         color: "#1F82FF",
         url: "/audio-generator",
-    },
-    {
-        id: "3",
-        title: "Art feedback",
-        color: "#FF6C3E",
-        url: "/education-feedback",
     },
     {
         id: "4",

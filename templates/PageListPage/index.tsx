@@ -22,10 +22,6 @@ const items = [
         url: "/audio-generator",
     },
     {
-        title: "Education feedback",
-        url: "/education-feedback",
-    },
-    {
         title: "Photo generator",
         url: "/photo-generator",
     },

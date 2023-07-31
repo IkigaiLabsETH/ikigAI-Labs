@@ -20,17 +20,77 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+# OpenAI Magic with GPT-4.20
+This project is a starter kit for using OpenAI and its API layer. It is baked in with Authentication, Session Management, Token Tracking, as well as Billing (currently disabled). This MVP will answer specific questions or simplify complicated topics, all with an added bonus - No ads! ChatGPT has opened up a ton of unknowns. But 1 thing is for certain. Those who understand how to enter the right prompts will get the most out of this groundbreaking tech.
 
--   [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
--   [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Introduction
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+To start using the project, you will need the following. Node version 14 or above, MongoDB Cloud, an OpenAI account and key and Python.
 
-## Deploy on Vercel
+### Starting Guide
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Prepare the following items
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- OpenAI account + API Key
+- MongoDB Cloud instance database (free tier) + Cluster/Login
+- NodeJS
+- StripeJS (not required unless implementing billing)
+
+### Installation
+
+- Perform a NPM install or Yarn in the rood directory to install modules
+- Update the ENV keys (or ENV.DEV) for your environemnt (for OpenAI, Mongo Etc)
+- - MongoDB requires Cluster, Database, Username and Password
+- For PC `npm run api` to start the instance of the project
+- For Mac `npm run apimac` to start the instance of the project
+- Start the Create React App using `npm start`
+
+On first run, the database will initialise with an admin user at `/routes/middleware/mongo.js` which can be updated
+
+You will be able to login with the following details:
+`Username: admin@domain.com // Password: KeepingHumanSafe101`
+
+You should have an instance of the backend and frontend running.
+
+For more information, please follow the video attached to this project. This is a starter template. Support is not included as part of the download. Debugging and such will need to be performed at on your own, as well as implementing features.
+
+There is the option to add Stripe, which is currently configured for subscriptions, you will need to connect the Stripe API, Webook URL, and create pricing plans (tempalates provided).
+
+## Adding Prompts
+
+The following steps need to be completed to add one new prompt on the backend and frontend.
+
+### Part 1: Frontend
+Head to `./src/tools/` to add the option to use a prompt on the frontend:
+
+- Copy an existing prompt structure, and relabel the title, description, examples (eg, summarize.js -> helloworld.js)
+- Update the intended backend url call path on the prompt to `/helloworld`
+- Then import the new file add and it to the array on index.js
+
+### Part 2: Backend
+Head to `/routes/ai/` to add to the backend a new file
+
+- Copy an existing file prompt call such as (eg. summarize.js -> hellowworld.js)
+- Update the listen POST path to `/helloworld`
+- Import the new file and add it to the array on index.js
+
+Restart the client and backend server. The new prompt should show up. I've added an example hello world for testing purposes.
+
+### Part 3: Customise Promtps
+Udpate the backend and frontend queries to define the kind of prompt you want to query OpenAI with, as well as the kind of output you wish. There are examples for plaintext and listed prompts as part of this process.
+
+## Publishing the Project
+
+If you want to go live and publish the project, you will need a live domain and hosting. You can run NPM run build, and this will build the create react app the the build folder, which the web server will use as reference for the project online.
+
+## First Experiment WIP
+
+#chatGPT A "what's one of the hardest concepts for a human mind to visualize? Write a
+prompt for an Al image generator to try and create that image." Q "Imagine a vast, endless expanse of shimmering stars, stretching out in every direction as far as the eye can see. Each star is a different color and size, twinkling and pulsing with energy. In the center of this cosmic expanse, a glowing portal beckons, inviting you to step through and explore the infinite possibilities that lie beyond."
+
+Here's what it came up with, and here's how MidJourney visualized it:
+
+"Produce an art work from a text input. Use it to create your own unique piece of generative art to either just preview it or mint it as an NFT and store it on the Ethereum blockchain forever."
+
+#aiart #midjourney

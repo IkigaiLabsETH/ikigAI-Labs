@@ -47,12 +47,12 @@ const CreateChatBotPage = () => {
                     <div className="max-w-[45rem] mx-auto">
                         <div className="flex justify-between items-center mb-5 md:-mx-5 md:mb-8 md:px-5 md:pb-5 md:border-b md:border-n-3 dark:md:border-n-5">
                             <div className="text-h2 lg:text-h3 md:text-h6">
-                                Create your own AI-powered assistant
+                                Create your private assistant
                             </div>
                             <PreviewChatBot />
                         </div>
                         <div className="mb-12 text-body-1 text-n-4 md:text-body-2 md:mb-8">
-                            Your bespoke chatbot helps you produce code, design and content.
+                            AI-powered chatbot to produce code, design and content.
                         </div>
                         <form
                             action=""

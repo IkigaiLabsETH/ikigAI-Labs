@@ -127,7 +127,7 @@ const Form = ({}: FormProps) => {
             </div>
             <div className="flex items-center mb-8 text-small text-n-4">
                 <Icon className="w-4 h-4 mr-2 fill-color-3" name="lock" />
-                Secured form with onchain Banking
+                Secured form with CoinBase Commerce.
             </div>
             <Foot />
         </form>

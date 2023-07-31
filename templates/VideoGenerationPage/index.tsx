@@ -15,17 +15,15 @@ const VideoGenerationPage = () => {
                         <>
                             Create a talking avatar for this script: <br></br>{" "}
                             <br></br>
-                            &quot;Welcome to our new product, the Talking Avatar
-                            Video Creator. With this powerful tool, you can
+                            the Talking Avatar Video Creator. 
+                            With this powerful tool, you can
                             easily create engaging videos featuring a virtual
                             spokesperson that delivers your message in a
                             personalized and natural way. Whether you&apos;re
-                            promoting a product, sharing information about your
-                            business, or delivering a training session, our
+                            chatting about art, sharing information about your
+                            collection, or delivering a training session, our
                             AI-powered technology makes it easy to create
-                            professional-looking videos that grab attention and
-                            drive results. Try it out today and see the
-                            difference for yourself!&quot;
+                            professional-looking videos.
                         </>
                     }
                     image="/images/file-name.jpg"

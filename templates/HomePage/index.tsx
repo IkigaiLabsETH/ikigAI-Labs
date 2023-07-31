@@ -46,7 +46,7 @@ const HomePage = () => {
                         <div className="mb-5 text-base-2 text-n-4">
                             ikigAI assistant is traing a bespoke ML model that surpasses any generic ChatGPT in
                             several areas, like creative coding, design,
-                            content, and above all, context. Constructing AI x web3 as an art collective.
+                            content, and above all, context. Constructing AI and web3 as an art collective.
                         </div>
                         <Users
                             className="mb-8"

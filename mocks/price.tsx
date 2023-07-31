@@ -10,11 +10,11 @@ export const price = [
         current: true,
         details: [
             {
-                title: "5 chatbots",
+                title: "2 chatbots",
                 disabled: false,
             },
             {
-                title: "Up to 1000 messages/mo",
+                title: "Up to 420 messages/mo",
                 disabled: false,
             },
             {
@@ -50,7 +50,7 @@ export const price = [
                 disabled: false,
             },
             {
-                title: "Up to 5000 messages/mo",
+                title: "Up to 4200 messages/mo",
                 disabled: false,
             },
             {

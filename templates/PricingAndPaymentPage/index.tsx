@@ -40,11 +40,10 @@ const CreateChatBotPage = () => {
                     <div className="max-w-[76.5rem] mx-auto">
                         <div className="mb-15 text-center xl:mb-8">
                             <div className="mb-2 text-h1 xl:text-h2 lg:text-h3">
-                                Unlock the power of AI
+                                ikiGAI Gen Art Coding Assistant
                             </div>
                             <div className="mb-15 text-body-1 text-n-4 xl:mb-8">
-                                Meet the ikigAI of our ai chat app
-                                revolutionizing conversations
+                                Meet the ikigAI of our gen art series
                             </div>
                             <Tabs
                                 className="max-w-[18rem] mx-auto"

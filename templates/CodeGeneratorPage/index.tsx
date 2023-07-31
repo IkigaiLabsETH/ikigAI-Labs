@@ -12,17 +12,17 @@ const CodeGeneratorPage = () => {
     return (
         <Layout>
             <Chat background="/images/bg-6.jpg">
-                <Question content="Write a recursive python function for the fibonacci sequence" />
+                <Question content="Write a P5js script for my gen art series " />
                 <Answer
-                    content="Sure, here's an example of a recursive Python function that calculates the nth number in the Fibonacci sequence:"
-                    message="Generating answers for you…"
+                    content="Sure, here's an example of a gen art series script that uses the flow fields algorithm:"
+                    message="Generating code for you…"
                     loading="Intergrading male voice and adjusting the tone"
                 >
                     <Code code={code} />
                 </Answer>
-                <Question content="Write a upload form in HTML, CSS and JS" />
+                <Question content="Write a flow fields algorithm for my gen art series" />
                 <Answer
-                    content="Sure, here's an example of a recursive Python function that calculates the nth number in the Fibonacci sequence:"
+                    content="Sure, here's an example of a flow fields algorithm that is somewhat inspired by Fidenza:"
                     message="Generating answers for you…"
                 >
                     <Code
@@ -49,16 +49,15 @@ const CodeGeneratorPage = () => {
                         actions={actions}
                     />
                 </Answer>
-                <Question content="Is there a way to display a progress bar during the upload?" />
+                <Question content="Is there a way to render the drawing" />
                 <Answer
                     content={
                         <>
-                            Yes, you can display a progress bar during the
-                            upload using the XMLHttpRequest object in
-                            JavaScript. Here&apos;s an updated version of the
+                            Yes, you can render the drawing in
+                            P5js. Here&apos;s an updated version of the
                             previous code with a{" "}
                             <span className="font-semibold text-primary-3">
-                                progress bar
+                                P5js script
                             </span>
                             :
                         </>
@@ -69,19 +68,14 @@ const CodeGeneratorPage = () => {
                         items={itemsCode}
                         content={
                             <>
-                                The progress bar is added to the HTML with the
-                                progress element. In the JS code, an
-                                XMLHttpRequest object is created to handle the
-                                upload. The upload event is listened to for
+                                In the P5js code, an
+                                object is created to handle the
+                                light renders. The upload event is listened to for
                                 progress updates, and the progress bar is
-                                updated accordingly. Finally, the load event is
+                                rendered onchain. Finally, the load event is
                                 listened to for the server&apos;s response,
                                 which is logged to the console.
-                                <br></br>Note that the progress bar will only
-                                display if the server supports sending progress
-                                updates during the upload. If the server does
-                                not support this feature, the progress bar will
-                                not update.
+                                <br></br>.
                             </>
                         }
                         actions={actions}

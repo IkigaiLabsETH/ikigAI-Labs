@@ -4,7 +4,6 @@
 // use client
 
 import dynamic from "next/dynamic";
-import { useEffect } from "react";
 import { NextPage } from "next";
 import { Task } from "@/interfaces/education";
 import EducationFeedbackPage from "@/templates/EducationFeedbackPage";

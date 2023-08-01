@@ -1,6 +1,6 @@
 // app/education-feedback/page.tsx
-import type { NextPage } from "next";
 import dynamic from "next/dynamic";
+import { NextPage } from "next"; // Import NextPage from "next" package
 import { Task } from '@/interfaces/education';
 
 // Dynamic import of EducationFeedbackPage component
@@ -8,10 +8,6 @@ const EducationFeedbackPage = dynamic(
   () => import("@/templates/EducationFeedbackPage"),
   { ssr: false } // Set ssr to false to ensure the component is loaded on the client side
 );
-
-
-import type { NextPage } from "next";
-import { Task } from '@/interfaces/education';
 
 // Define your task here
 const task: Task = {

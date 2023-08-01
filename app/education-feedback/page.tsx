@@ -1,17 +1,10 @@
-
 // app/education-feedback/page.tsx
 // @ts-nocheck
 // use client
 
-import dynamic from "next/dynamic";
 import { NextPage } from "next";
 import { Task } from "@/interfaces/education";
-import EducationFeedbackPage from "@/templates/EducationFeedbackPage";
-
-import dynamic from "next/dynamic";
-import { NextPage } from "next";
-import { Task } from "@/interfaces/education";
-import EducationFeedbackPage from "@/templates/EducationFeedbackPage";
+import EducationFeedbackPage from "@/templates/EducationFeedbackPage"; // Remove duplicate import statement for dynamic
 
 // Dynamic import of EducationFeedbackPage component
 const DynamicEducationFeedbackPage = dynamic(

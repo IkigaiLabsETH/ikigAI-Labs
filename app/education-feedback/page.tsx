@@ -1,8 +1,15 @@
+
 // app/education-feedback/page.tsx
 // @ts-nocheck
-import { useClient } from "next/react"; // Import the useClient pragma from the next/react module
 // use client
 
+import dynamic from "next/dynamic";
+import { useEffect } from "react";
+import { NextPage } from "next";
+import { Task } from "@/interfaces/education";
+import EducationFeedbackPage from "@/templates/EducationFeedbackPage";
+
+import dynamic from "next/dynamic";
 import { NextPage } from "next";
 import { Task } from "@/interfaces/education";
 import EducationFeedbackPage from "@/templates/EducationFeedbackPage";
@@ -56,16 +63,7 @@ const EducationFeedback: NextPage = () => {
     // Your useEffect logic (if needed)
   }, []);
 
-  // Add the useClient pragma to mark this component as a "Client Component"
-  useClient();
-
-  return <EducationFeedbackPage task={task} />;
+  return <DynamicEducationFeedbackPage task={task} />;
 };
 
 export default EducationFeedback;
-
-
-
-
-
-

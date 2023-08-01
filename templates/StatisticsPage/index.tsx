@@ -17,47 +17,47 @@ const StatisticsPage = () => {
                 <Question
                     content={
                         <>
-                            Hey, I'll give you a link to my Dribbble portfolio.
+                            Hey, I'll give you a link to my portfolio.
                             Your mission is to provide me with the stats of this
                             page:&nbsp;
                             <a
                                 className="font-semibold text-primary-3 break-all"
-                                href="https://dribbble.com/tranmautritam"
+                                href="https://etherscan.io"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                https://dribbble.com/tranmautritam
+                                https://etherscan.io
                             </a>
                         </>
                     }
                 >
                     <PreviewPost
-                        title="Dribbble"
-                        content="Tran Mau Tri Tam – Dribbble Porfile"
+                        title="Etherscan Data"
+                        content="Etherscan Porfolio Overview"
                         image="/images/dribbble-post-1.jpg"
                     />
                 </Question>
                 <Answer
-                    content="These are the statistics for that Dribbble portfolio."
+                    content="These are the statistics for that portfolio."
                     message="Generating answers for you…"
                 >
                     <div className="flex space-x-6 2xl:space-x-4 md:block md:space-x-0 md:space-y-3">
                         <StatisticsItem
                             className="flex-1 p-10 gradient-1 rounded-[1.25rem] 2xl:p-6 lg:px-4 md:px-8 md:py-5"
                             image="/images/eye.svg"
-                            title="Shot view"
+                            title="Valuation"
                             value="2.7M"
                         />
                         <StatisticsItem
                             className="flex-1 p-10 gradient-3 rounded-[1.25rem] 2xl:p-6 lg:px-4 md:px-8 md:py-5"
                             image="/images/annotation-check.svg"
-                            title="Comments"
+                            title="Transactions"
                             value="18,000"
                         />
                         <StatisticsItem
                             className="flex-1 p-10 gradient-4 rounded-[1.25rem] 2xl:p-6 lg:px-4 md:px-8 md:py-5"
                             image="/images/heart.svg"
-                            title="Likes"
+                            title="Liquidity"
                             value="960,000"
                         />
                     </div>

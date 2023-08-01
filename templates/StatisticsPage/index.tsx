@@ -1,5 +1,8 @@
 "use client";
 
+import { useState } from 'react';
+import { Statistics } from '@/interfaces/statistics';
+
 import Layout from "@/components/Layout";
 import Chat from "@/components/Chat";
 import Question from "@/components/Question";
@@ -8,9 +11,17 @@ import Answer from "@/components/Answer";
 import StatisticsItem from "@/components/StatisticsItem";
 import Chart from "@/components/Chart";
 
-import { statistics } from "@/mocks/statistics";
-
 const StatisticsPage = () => {
+    const [statisticsData, setStatisticsData] = useState<Statistics[]>([
+        {
+            className: "flex-1 p-10 gradient-1 rounded-[1.25rem] 2xl:p-6 lg:px-4 md:px-8 md:py-5",
+            image: "/images/eye.svg",
+            title: "Valuation",
+            value: "2.7M"
+        },
+        // ... more data
+    ]);
+
     return (
         <Layout>
             <Chat background="/images/bg-4.jpg">
@@ -42,26 +53,17 @@ const StatisticsPage = () => {
                     message="Generating answers for you…"
                 >
                     <div className="flex space-x-6 2xl:space-x-4 md:block md:space-x-0 md:space-y-3">
-                        <StatisticsItem
-                            className="flex-1 p-10 gradient-1 rounded-[1.25rem] 2xl:p-6 lg:px-4 md:px-8 md:py-5"
-                            image="/images/eye.svg"
-                            title="Valuation"
-                            value="2.7M"
-                        />
-                        <StatisticsItem
-                            className="flex-1 p-10 gradient-3 rounded-[1.25rem] 2xl:p-6 lg:px-4 md:px-8 md:py-5"
-                            image="/images/annotation-check.svg"
-                            title="Transactions"
-                            value="18,000"
-                        />
-                        <StatisticsItem
-                            className="flex-1 p-10 gradient-4 rounded-[1.25rem] 2xl:p-6 lg:px-4 md:px-8 md:py-5"
-                            image="/images/heart.svg"
-                            title="Liquidity"
-                            value="960,000"
-                        />
+                        {statisticsData.map((item, index) => (
+                            <StatisticsItem
+                                key={index}
+                                className={item.className}
+                                image={item.image}
+                                title={item.title}
+                                value={item.value}
+                            />
+                        ))}
                     </div>
-                    <Chart className="-ml-7 py-6 md:py-3" items={statistics} />
+                    <Chart className="-ml-7 py-6 md:py-3" items={statisticsData} />
                 </Answer>
             </Chat>
         </Layout>

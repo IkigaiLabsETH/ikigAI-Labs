@@ -47,13 +47,13 @@ const Dashboard = ({}: DashboardProps) => {
                 <StatisticsItem
                     className="flex-1 p-10 gradient-1 rounded-[1.25rem] md:px-8 md:py-5"
                     image="/images/eye.svg"
-                    title="Conversations"
+                    title="Valuation"
                     value="3.8M"
                 />
                 <StatisticsItem
                     className="flex-1 p-10 gradient-3 rounded-[1.25rem] md:px-8 md:py-5"
                     image="/images/annotation-check.svg"
-                    title="Clients"
+                    title="Transactions"
                     value="18,000"
                 />
             </div>

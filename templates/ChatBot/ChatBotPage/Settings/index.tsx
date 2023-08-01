@@ -29,7 +29,7 @@ const CreateChatBotPage = () => {
     const [name, setName] = useState<string>("ikigAI Bot");
     const [bot, setBot] = useState<any>(bots[0]);
     const [message, setMessage] = useState<string>(
-        "Hello, I’m ikigAI a large language model designed to answer questions and provide information on art and code. How can I assist you today?"
+        "GM GM, I’m ikigAI, your openai assistant designed to answer questions and provide information on art and code. How can I assist you today?"
     );
     const [prompt, setPrompt] = useState<string>(
         "What are the best selling ArtBlocks collections? Can you explain the concept of flow fields What is the price of Ethereum"

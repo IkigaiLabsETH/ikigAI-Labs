@@ -48,11 +48,11 @@ const RemoveChatBot = ({}: RemoveChatBotProps) => {
                 onClose={() => setVisibleModal(false)}
             >
                 <div className="mb-2 text-h4 md:text-h5">
-                    Are you sure you want to delete this chatbot?
+                    Anon, are you sure you want to delete this chatbot?
                 </div>
                 <div className="mb-10 text-body-1 text-n-4 md:mb-6">
-                    This action cannot be undone and all data will be
-                    permanently lost.
+                    GM. This action cannot be undone and all data will be
+                    permanently lost tbh.
                 </div>
                 <div className="flex space-x-3">
                     <button

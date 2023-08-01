@@ -10,6 +10,10 @@ const items = [
         url: "/new-chat",
     },
     {
+        title: "Code generator",
+        url: "/code-generator",
+    },
+    {
         title: "Video generation",
         url: "/video-generation",
     },
@@ -24,10 +28,6 @@ const items = [
     {
         title: "Photo generator",
         url: "/photo-generator",
-    },
-    {
-        title: "Code generator",
-        url: "/code-generator",
     },
     {
         title: "Social",

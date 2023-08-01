@@ -16,14 +16,11 @@ const VideoGenerationPage = () => {
                             Create a talking avatar for this script: <br></br>{" "}
                             <br></br>
                             the Talking Avatar Video Creator. 
-                            With this powerful tool, you can
-                            easily create engaging videos featuring a virtual
-                            spokesperson that delivers your message in a
+                            You can easily create videos featuring a virtual
+                            avatar or NFT that delivers your message in a
                             personalized and natural way. Whether you&apos;re
                             chatting about art, sharing information about your
-                            collection, or delivering a training session, our
-                            AI-powered technology makes it easy to create
-                            professional-looking videos.
+                            collection, or delivering an AMA...
                         </>
                     }
                     image="/images/file-name.jpg"

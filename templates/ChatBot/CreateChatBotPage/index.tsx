@@ -52,7 +52,7 @@ const CreateChatBotPage = () => {
                             <PreviewChatBot />
                         </div>
                         <div className="mb-12 text-body-1 text-n-4 md:text-body-2 md:mb-8">
-                            AI-powered chatbot to produce code, design and content.
+                            ikigAI-powered chatbot to produce code, design and content.
                         </div>
                         <form
                             action=""
@@ -93,7 +93,7 @@ const CreateChatBotPage = () => {
                                             alt=""
                                         />
                                     </div>
-                                    2000x2000 PNG, JPG is recommended. Maximum
+                                    800x800 PNG, JPG is recommended. Maximum
                                     file size: 2Mb
                                 </div>
                             </div>
@@ -127,7 +127,7 @@ const CreateChatBotPage = () => {
                             <Field
                                 className="mb-12 md:mb-8"
                                 label="Suggest prompts"
-                                placeholder="I.g. What is ikigAI"
+                                placeholder="I.g. What is ikigAI Labs XYZ"
                                 note="Enter each message in a new line."
                                 value={prompt}
                                 onChange={(e: any) => setPrompt(e.target.value)}

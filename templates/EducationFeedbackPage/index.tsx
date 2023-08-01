@@ -1,5 +1,4 @@
 // templates/EducationFeedbackPage/index.tsx
-
 import { Task } from '@/interfaces/education';
 import { useState, useEffect } from 'react';
 import Layout from "@/components/Layout";
@@ -68,4 +67,6 @@ const EducationFeedbackPage: React.FC<EducationFeedbackPageProps> = ({ task }) =
     );
 };
 
+// Mark the component for client-side rendering using the useClient hook
 export default EducationFeedbackPage;
+export { useClient }; // Add this line at the end

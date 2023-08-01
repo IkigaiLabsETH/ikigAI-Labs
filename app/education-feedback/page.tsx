@@ -8,12 +8,12 @@ import EducationFeedbackPage from "@/templates/EducationFeedbackPage";
 // Dynamic import of EducationFeedbackPage component
 const DynamicEducationFeedbackPage = dynamic(
   () => import("@/templates/EducationFeedbackPage"),
-  { ssr: true } // Set ssr to false to ensure the component is loaded on the client side
+  { ssr: false } // Set ssr to false to ensure the component is loaded on the client side
 );
 
 // Define your task here
 const task: Task = {
-  api: 'Your API endpoint',
+  api: './route',
   desc: 'Your description',
   fromColor: 'Your color',
   title: 'Your title',

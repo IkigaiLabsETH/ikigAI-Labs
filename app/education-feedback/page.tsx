@@ -5,6 +5,8 @@ import dynamic from "next/dynamic";
 import { useEffect } from "react"; // Add useEffect import
 import { NextPage } from "next"; // Import NextPage from "next" package
 import { Task } from '@/interfaces/education';
+import { useClient } from "@lukejamesk/core"; // Import useClient from the "@lukejamesk/core" package
+
 
 // Dynamic import of EducationFeedbackPage component
 const EducationFeedbackPage = dynamic(
@@ -51,6 +53,9 @@ const task: Task = {
 };
 
 const EducationFeedback: NextPage = () => {
+  // Mark the parent component as a client-side component using useClient hook
+  useClient();
+
   useEffect(() => {
     // This useEffect hook runs on the client side
     // You can add any client-side logic here if needed

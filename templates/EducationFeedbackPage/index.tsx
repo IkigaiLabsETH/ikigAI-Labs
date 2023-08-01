@@ -1,3 +1,5 @@
+// templates/EducationFeedbackPage/index.tsx
+
 import { Task } from '@/interfaces/education';
 import { useState, useEffect } from 'react';
 import Layout from "@/components/Layout";
@@ -23,10 +25,10 @@ const EducationFeedbackPage: React.FC<EducationFeedbackPageProps> = ({ task }) =
 
     const fetchData = async () => {
         try {
-            const res = await fetch(task.api, {  // use the api from the task prop
+            const res = await fetch(task.api, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ query: task.desc })  // use the desc from the task prop as the query
+                body: JSON.stringify({ query: task.desc })
             });
 
             if (!res.ok) {
@@ -47,9 +49,9 @@ const EducationFeedbackPage: React.FC<EducationFeedbackPageProps> = ({ task }) =
 
     return (
         <Layout>
-            <Chat background={task.fromColor}>  // use the fromColor from the task prop as the background
+            <Chat background={task.fromColor}>
                 <Question
-                    content={task.title}  // use the title from the task prop as the content
+                    content={task.title}
                     files={["file-name.pdf", "file-name.pdf", "file-name.pdf"]}
                 />
                 {loading ? (

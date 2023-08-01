@@ -1,7 +1,14 @@
+import dynamic from "next/dynamic";
+
+// Dynamic import of EducationFeedbackPage component
+const EducationFeedbackPage = dynamic(
+  () => import("@/templates/EducationFeedbackPage"),
+  { ssr: false } // Set ssr to false to ensure the component is loaded on the client side
+);
+
 import type { NextPage } from "next";
-import EducationFeedbackPage from "@/templates/EducationFeedbackPage";
 import { Task } from '@/interfaces/education';
-// import { FaIconName } from 'react-icons/fa'; // Import the icon library you want to use
+
 // Define your task here
 const task: Task = {
   api: 'Your API endpoint',
@@ -40,9 +47,8 @@ const task: Task = {
   ],
 };
 
-
 const EducationFeedback: NextPage = () => {
-    return <EducationFeedbackPage task={task} />;
+  return <EducationFeedbackPage task={task} />;
 };
 
 export default EducationFeedback;

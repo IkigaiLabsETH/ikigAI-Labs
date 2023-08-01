@@ -44,7 +44,7 @@ const HomePage = () => {
                 <div className="flex mb-13 lg:relative lg:block lg:pb-20">
                     <div className="grow">
                         <div className="mb-5 text-base-2 text-n-4">
-                            ikigAI assistant is traing a bespoke ML model that surpasses any generic ChatGPT in
+                            ikigAI assistant is training a bespoke ML model that surpasses any generic ChatGPT in
                             several areas, like creative coding, design,
                             content, and above all, context. Constructing AI and web3 as an art collective.
                         </div>

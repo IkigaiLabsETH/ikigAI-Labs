@@ -1,5 +1,3 @@
-// testing to see I can get education agent running, code not complete
-
 export interface PromptField {
     title: string;
     attr: string;
@@ -32,12 +30,12 @@ export interface Task {
     title: string;
     desc: string;
     category: string;
-    Icon: any;
+    // Icon: any; // If you want to use a string as an icon, you might need to import an icon library like `react-icons`, `material-ui/icons`, or `@fortawesome/react-fontawesome`.
     permissions: string[];
     fromColor: string;
     toColor: string;
     to: string;
     api: string;
     output: Output;
-    prompts: Prompt[];
+    prompts: Prompt[]; // This should be an array of `Prompt` objects
 }

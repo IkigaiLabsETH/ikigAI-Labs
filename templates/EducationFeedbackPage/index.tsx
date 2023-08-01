@@ -7,7 +7,10 @@ import Answer from "@/components/Answer";
 import Feedback from "@/components/Feedback";
 
 interface ResponseType {
-  data: string; // replace this with the actual shape of your response
+    data: {
+      id: number;
+      name: string;
+    };
 }
 
 interface EducationFeedbackPageProps {
@@ -54,7 +57,7 @@ const EducationFeedbackPage: React.FC<EducationFeedbackPageProps> = ({ task }) =
                         <div>Loading...</div>
                     </Answer>
                 ) : (
-                    response && <Answer message={response.data}>
+                    response && <Answer message={`ID: ${response.data.id}, Name: ${response.data.name}`}>
                         <Feedback />
                     </Answer>
                 )}

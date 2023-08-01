@@ -2,9 +2,11 @@
 // @ts-nocheck
 // use client
 
+import { useEffect } from "react"; // Add the missing import for useEffect
 import { NextPage } from "next";
+import dynamic from "next/dynamic"; // Add the import for dynamic
 import { Task } from "@/interfaces/education";
-import EducationFeedbackPage from "@/templates/EducationFeedbackPage"; // Remove duplicate import statement for dynamic
+import EducationFeedbackPage from "@/templates/EducationFeedbackPage";
 
 // Dynamic import of EducationFeedbackPage component
 const DynamicEducationFeedbackPage = dynamic(
@@ -51,6 +53,9 @@ const task: Task = {
 };
 
 const EducationFeedback: NextPage = () => {
+  // Mark the parent component as a Client Component using the "use client" pragma
+  // use client
+
   useEffect(() => {
     // Your useEffect logic (if needed)
   }, []);

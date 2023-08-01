@@ -1,3 +1,5 @@
+// interfaces/education.ts
+
 export interface PromptField {
     title: string;
     attr: string;

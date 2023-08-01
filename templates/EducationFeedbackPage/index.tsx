@@ -67,6 +67,4 @@ const EducationFeedbackPage: React.FC<EducationFeedbackPageProps> = ({ task }) =
     );
 };
 
-// Mark the component for client-side rendering using the useClient hook
 export default EducationFeedbackPage;
-export { useClient }; // Add this line at the end

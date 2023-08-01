@@ -1,4 +1,6 @@
 // Import the necessary modules and components for making API calls
+// Please note that the code includes placeholders for the API endpoints and the user input/query. You need to replace them with the actual API endpoints and the user input/query for the code to work correctly. Also, make sure to handle API errors and loading states appropriately in your actual implementation.
+
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Link from "next/link";
@@ -24,7 +26,7 @@ const HomePage = () => {
 
     // Make the API call to the Replicate API
     axios
-      .post("/api/replicate", {
+      .post("app/api/route", {
         query: userInput,
       })
       .then((response) => {
@@ -37,7 +39,7 @@ const HomePage = () => {
 
     // Make the API call to the OpenAI API
     axios
-      .post("/api/openai", {
+      .post("app/api/route", {
         query: userInput,
       })
       .then((response) => {

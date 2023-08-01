@@ -1,7 +1,13 @@
 // app/education-feedback/page.tsx
 import dynamic from "next/dynamic";
+
+import { useEffect } from "react"; // Add useEffect import
 import { NextPage } from "next"; // Import NextPage from "next" package
 import { Task } from '@/interfaces/education';
+import EducationFeedbackPage from "@/templates/EducationFeedbackPage";
+
+// Mark the parent component as a client-side component with "use client"
+use client;
 
 // Dynamic import of EducationFeedbackPage component
 const EducationFeedbackPage = dynamic(
@@ -48,7 +54,11 @@ const task: Task = {
 };
 
 const EducationFeedback: NextPage = () => {
+  useEffect(() => {
   return <EducationFeedbackPage task={task} />;
+}, []);
+
+return <EducationFeedbackPage task={task} />;
 };
 
 export default EducationFeedback;

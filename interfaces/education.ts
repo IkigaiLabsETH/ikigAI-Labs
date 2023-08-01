@@ -1,4 +1,6 @@
 // interfaces/education.ts
+// @ts-nocheck
+// use client
 
 export interface PromptField {
     title: string;

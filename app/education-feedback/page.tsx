@@ -8,7 +8,7 @@ import EducationFeedbackPage from "@/templates/EducationFeedbackPage";
 // Dynamic import of EducationFeedbackPage component
 const DynamicEducationFeedbackPage = dynamic(
   () => import("@/templates/EducationFeedbackPage"),
-  { ssr: false } // Set ssr to false to ensure the component is loaded on the client side
+  { ssr: true } // Set ssr to false to ensure the component is loaded on the client side
 );
 
 // Define your task here

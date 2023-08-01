@@ -51,7 +51,7 @@ export default function RootLayout({
                 <meta name="twitter:title" content="ikigAI - Labs XYZ" />
                 <meta
                     name="twitter:description"
-                    content="Figma UI kit designed to enhance the functionality of ChatGPT"
+                    content="ikigAI to F around and find out how to be creative with code"
                 />
                 <meta name="twitter:creator" content="@ikigailabseth" />
                 <meta

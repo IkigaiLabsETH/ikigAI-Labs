@@ -33,29 +33,29 @@ module.exports = {
         extend: {
             colors: {
                 color: {
-                    1: "#313459", // #FF66C2 // TEAL
-                    2: "#313459", // #066FF4 // BLUE
-                    3: "#D88B3F", // #4BAB71 // GREEN
-                    4: "#F9D401", // #FFC224 // YELLOW
-                    5: "#A1100F", // #FF6C3E // RED
+                    1: "#FF66C2", // #FF66C2 // TEAL
+                    2: "#066FF4", // #066FF4 // BLUE
+                    3: "#4BAB71", // #4BAB71 // GREEN
+                    4: "#FFC224", // #FFC224 // YELLOW
+                    5: "#FF6C3E", // #FF6C3E // RED
                 },
                 n: {
-                    1: "#F5F2EC", // #FCFDFE
-                    2: "#EBC4D2", // #F1F5F9
-                    3: "#E3E3E3", // #E3E9EE
-                    4: "#131A31", // #7C878E
-                    5: "#212932", // #393E44
-                    6: "#243356", // #292D32 
-                    7: "#131A31", // #181B1F
+                    1: "#FCFDFE", // #FCFDFE
+                    2: "#F1F5F9", // #F1F5F9
+                    3: "#E3E9EE", // #E3E9EE
+                    4: "#7C878E", // #7C878E
+                    5: "#393E44", // #393E44
+                    6: "#292D32", // #292D32 
+                    7: "#181B1F", // #181B1F
                 },
                 primary: {
-                    1: "#F9D401", // #F9D401 #0C018C
-                    2: "#F9D401", // #F9D401 #331BD7
-                    3: "#F9D401", // #F9D401 #735FFA
+                    1: "#0C018C", // #F9D401 #0C018C
+                    2: "#331BD7", // #F9D401 #331BD7
+                    3: "#735FFA", // #F9D401 #735FFA
                     4: "#F9D401", // #F9D401 #BE87FF
-                    5: "#F9D401", // #F9D401 #DABAFF
-                    6: "#F9D401", // #F9D401 #E3CBFF
-                    7: "#F9D401", // #F9D401 #EBDBFF
+                    5: "#DABAFF", // #F9D401 #DABAFF
+                    6: "#E3CBFF", // #F9D401 #E3CBFF
+                    7: "#EBDBFF", // #F9D401 #EBDBFF
                 },
             },
             zIndex: {

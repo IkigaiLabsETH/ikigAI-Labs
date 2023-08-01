@@ -97,6 +97,12 @@ export const itemsCode = [
         language: "javascript",
         value: jsCode,
     },
+    {
+        id: "3",
+        title: "P5js",
+        language: "p5js",
+        value: jsCode,
+    },
 ];
 
 export const code = {
@@ -108,18 +114,18 @@ export const code = {
 export const actions = [
     {
         id: "0",
-        content: "Tell me more",
+        content: "Tell me what this code does",
     },
     {
         id: "1",
-        content: "Can you explain how the JavaScript function works?",
+        content: "Can you explain how the P5js function works?",
     },
     {
         id: "2",
-        content: "Is there a way to display a progress bar during the upload?",
+        content: "Is there a way to display a rendering effect?",
     },
     {
         id: "3",
-        content: "How can I add more fields to the form?",
+        content: "How can I add field flows to the code?",
     },
 ];

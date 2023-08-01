@@ -1,7 +1,7 @@
 export const chatActions = [
     {
         id: "0",
-        title: "Optimize code",
+        title: "Optimize style",
     },
     {
         id: "1",
@@ -126,7 +126,7 @@ export const chatRequest = [
     },
     {
         id: "1",
-        title: "How do I create a mint page",
+        title: "How do I deploy a smart contract with Thirdweb Create",
         image: "/images/icons/site.svg",
         lastModified: "3 min ago",
         created: "10 mins ago",
@@ -141,7 +141,7 @@ export const chatRequest = [
     },
     {
         id: "2",
-        title: "Can you explain the concept of AI?",
+        title: "Can you explain the concept of Flow Fields in a Fidenza?",
         image: "/images/icons/message-chat-circle.svg",
         lastModified: "10 min ago",
         created: "35 mins ago",
@@ -171,7 +171,7 @@ export const chatRequest = [
     },
     {
         id: "4",
-        title: "Upload form in P5js",
+        title: "Upload P5js code",
         image: "/images/icons/code-snippet.svg",
         lastModified: "1 hour ago",
         created: "5 hour ago",
@@ -189,43 +189,43 @@ export const chatRequest = [
 export const historyChat = [
     {
         id: "0",
-        title: "Curator talking about Gen Art",
+        title: "Curator talking about his Gen Art",
         color: "#BE87FF",
         url: "/video-generation",
     },
     {
         id: "1",
-        title: "Retouch photo",
+        title: "Retouch cover photo for ikigAI",
         color: "#FF66C2",
         url: "/photo-editor",
     },
     {
         id: "2",
-        title: "Text-to-speech voice",
+        title: "Create Voice Over Media Files",
         color: "#1F82FF",
         url: "/audio-generator",
     },
     {
         id: "4",
-        title: "3D Hi Fi Retro Futuristic Character",
+        title: "Cyberpunk, IMAX, ARRI, Velvia,",
         color: "#735FFA",
         url: "/photo-generator",
     },
     {
         id: "5",
-        title: "P5js function",
+        title: "P5js flow fields",
         color: "#4BAB71",
         url: "/code-generator",
     },
     {
         id: "6",
-        title: "Content Creation",
+        title: "Content Creation for X",
         color: "#FF6C3E",
         url: "/social",
     },
     {
         id: "7",
-        title: "Statistics",
+        title: "Web3 Market Stats",
         color: "#FF66C2",
         url: "/statistics",
     },

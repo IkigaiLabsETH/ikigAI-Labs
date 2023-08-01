@@ -19,7 +19,7 @@ const StatisticsPage = () => {
                         <>
                             Hey, I'll give you a link to my portfolio.
                             Your mission is to provide me with the stats of this
-                            page:&nbsp;
+                            address:&nbsp;
                             <a
                                 className="font-semibold text-primary-3 break-all"
                                 href="https://etherscan.io"

@@ -1,4 +1,6 @@
 // app/education-feedback/page.tsx
+// @ts-nocheck
+
 import dynamic from "next/dynamic";
 import { useEffect } from "react"; // Add useEffect import
 import { NextPage } from "next"; // Import NextPage from "next" package

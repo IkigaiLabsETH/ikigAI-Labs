@@ -1,5 +1,4 @@
 // templates/EducationFeedbackPage/index.tsx
-// use client
 
 import React, { useState } from 'react';
 import { Task } from '@/interfaces/education';

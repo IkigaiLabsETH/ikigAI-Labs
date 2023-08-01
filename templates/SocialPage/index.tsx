@@ -18,19 +18,19 @@ const SocialPage = () => {
                             social media with the link:&nbsp;
                             <a
                                 className="text-body-1 font-semibold text-primary-3 break-all"
-                                href="https://dribbble.com/"
+                                href="https://livethelife.tv/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                https://dribbble.com/
+                                https://livethelife.tv/
                             </a>
                             &nbsp; with link and hashtag for Twitter, Facebook
                         </>
                     }
                 >
                     <PreviewPost
-                        title="Dribbble"
-                        content="Aloha"
+                        title="LiveTheLifeTV"
+                        content="GM"
                         image="/images/dribbble-post.jpg"
                     />
                 </Question>

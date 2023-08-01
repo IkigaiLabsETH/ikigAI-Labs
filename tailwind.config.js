@@ -33,11 +33,11 @@ module.exports = {
         extend: {
             colors: {
                 color: {
-                    1: "#599098", // #FF66C2
-                    2: "#3772AD", // #066FF4
-                    3: "#D88B3F", // #4BAB71
-                    4: "#E9C250", // #FFC224
-                    5: "#D06435", // #FF6C3E
+                    1: "#313459", // #FF66C2 // TEAL
+                    2: "#313459", // #066FF4 // BLUE
+                    3: "#D88B3F", // #4BAB71 // GREEN
+                    4: "#F9D401", // #FFC224 // YELLOW
+                    5: "#A1100F", // #FF6C3E // RED
                 },
                 n: {
                     1: "#F5F2EC", // #FCFDFE

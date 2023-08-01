@@ -1,19 +1,9 @@
-import {
-	ChevronRightIcon,
-} from '@heroicons/react/solid'
-
-import {
-	EyeIcon,
-} from '@heroicons/react/outline'
-
-
 
 const obj = {
 
 	title: "Explain Code",
 	desc: "Interpret some code based on the language, code, and syntax provided",
 	category: "Programming",
-	Icon: EyeIcon,
 	// tags: [],
 	permissions: ['user'],
 	
@@ -26,7 +16,6 @@ const obj = {
 	output: {
 		title: "What does this code do",
 		desc: "The following code does:",
-		Icon: ChevronRightIcon,
 		color: "gray",
 	},
 
@@ -83,4 +72,3 @@ const obj = {
 }
 
 export default obj
-

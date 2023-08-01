@@ -1,14 +1,8 @@
-import {
-	ViewListIcon,
-} from '@heroicons/react/solid'
-
-
 const obj = {
 
 	title: "Summarize",
 	desc: "Rewrite this for brevity ",
 	category: "Content",
-	Icon: ViewListIcon,
 	// tags: [],
 	permissions: ['user'],
 	

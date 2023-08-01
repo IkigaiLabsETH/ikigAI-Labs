@@ -1,14 +1,8 @@
-import {
-	ViewListIcon,
-} from '@heroicons/react/solid'
-
-
 const obj = {
 
-	title: "Travel Agent",
+	title: "Travel",
 	desc: "I want you to act as a travel guide. I will write you my location and you will suggest a 5-star hotel and a gastronomic restaurant to visit near my location. In some cases, I will also give you the type of places I will visit. For example a surfing beach. You will also suggest me places of similar type that are close to my first location. My first suggestion request is I am in Bordeaux and I want to visit museums, enjoy fine dinging, and a place to sleep, with the preference for a 5-star hotel. ",
 	category: "Personal",
-	Icon: ViewListIcon,
 	// tags: [],
 	permissions: ['user'],
 	
@@ -19,7 +13,7 @@ const obj = {
 	api: "/ai/travelagent",
 
 	output: {
-		title: "Hello Ser",
+		title: "GM GM",
 		desc: "The following destination seems like a good idea",
 		Icon: false,
 		color: "blue",
@@ -33,7 +27,7 @@ const obj = {
 				title: "Content", 
 				attr: "content",  
 				value: "", 
-				placeholder: "When doing an your taxes, it's important to...", 
+				placeholder: "When I visit Bordeaux, I want to visit art galleries, fine dining restaurant, hip lounge bars and co-working space, and 5-star boutique hotels.", 
 				label: "",
 				type: "textarea",
 				maxLength: 600,

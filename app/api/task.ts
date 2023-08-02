@@ -1,14 +1,11 @@
-// testing code below is not complete
-
-'use client'
-import { useState } from 'react'
+import { useEffect, useState } from 'react';
 
 export default function Home() {
-  const [input, setInput] = useState('')
-  const [image, setImage] = useState('')
-  const [audio, setAudio] = useState('')
-  const [video, setVideo] = useState('')
-  const [text, setText] = useState('')
+  const [input, setInput] = useState('');
+  const [image, setImage] = useState('');
+  const [audio, setAudio] = useState('');
+  const [video, setVideo] = useState('');
+  const [text, setText] = useState('');
 
   async function callApi() {
     try {
@@ -17,7 +14,7 @@ export default function Home() {
       setAudio('')
       setVideo('')
       setText('')
-      const response = await fetch('/api/', {
+      const response = await fetch('./api/', {
         method: "POST",
         body: JSON.stringify({
           query: input
@@ -40,5 +37,8 @@ export default function Home() {
     } catch (err) {
       console.log('error:', err)
     }
+    useEffect(() => {
+      callApi(); // Call the API when the component mounts
+    }, []); // Empty dependency array ensures it runs only once on mount  
   }
 }

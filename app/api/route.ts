@@ -8,16 +8,16 @@ const replicate = new Replicate({
 const KEY = process.env.OPENAI_API_KEY
 const base_uri = 'https://api.openai.com/v1/chat/completions'
 
-const fetchData = async () => {
+const fetchData = async (req: NextRequest) => {
   try {
-    const res = await fetch('/api/task', {
+    const res = await fetch('./api/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
         // Add any authentication headers here if needed
-        'Authorization': 'Bearer your-auth-token',
+        'Authorization': `Bearer ${process.env.REPLICATE_TOKEN || ''}`,
       },
-      body: JSON.stringify({ query: task.desc }), 
+      body: JSON.stringify({ query: req.body }), 
     });
   } catch (err) {
     console.log('error fetching data: ', err)

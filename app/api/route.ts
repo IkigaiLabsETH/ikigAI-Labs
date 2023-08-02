@@ -10,17 +10,20 @@ const base_uri = 'https://api.openai.com/v1/chat/completions'
 
 const fetchData = async () => {
   try {
-    const res = await fetch('/api/route', {
+    const res = await fetch('/api/task', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
         // Add any authentication headers here if needed
         'Authorization': 'Bearer your-auth-token',
       },
-      body: JSON.stringify({ query: task.desc }),
+      body: JSON.stringify({ query: task.desc }), 
     });
-  } // <-- Add a semicolon here
+  } catch (err) {
+    console.log('error fetching data: ', err)
+  }
 }
+
 
 const headers = {
   'Content-Type': 'application/json',

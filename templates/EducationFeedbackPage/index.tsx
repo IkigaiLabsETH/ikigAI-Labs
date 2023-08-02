@@ -28,7 +28,7 @@ const EducationFeedbackPage: React.FC<EducationFeedbackPageProps> = ({ task }) =
       const res = await fetch(task.api, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ query: task.desc }),
+        body: JSON.stringify({ query: task }),
       });
 
       if (!res.ok) {
@@ -47,6 +47,11 @@ const EducationFeedbackPage: React.FC<EducationFeedbackPageProps> = ({ task }) =
     fetchData(); // Call the API when the component mounts
   }, []);
 
+  const handleChatButtonClick = () => {
+    setLoading(true);
+    fetchData();
+  };
+
   return (
     <Layout>
       <Chat background={task.fromColor}>
@@ -62,6 +67,7 @@ const EducationFeedbackPage: React.FC<EducationFeedbackPageProps> = ({ task }) =
             </Answer>
           )
         )}
+        <button onClick={handleChatButtonClick}>IMAGINE</button>
       </Chat>
     </Layout>
   );

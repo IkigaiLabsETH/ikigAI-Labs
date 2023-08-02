@@ -1,15 +1,21 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx } from 'theme-ui'; // Import the jsx pragma from the theme-ui package
-import { useEffect } from 'react'; // Import useEffect from the react package
+import { jsx } from 'theme-ui';
+import { useEffect, ComponentType } from 'react'; // Import ComponentType
 import type { AppProps } from 'next/app';
+import { isAnyArrayBuffer } from 'util/types';
 
-function MyApp({ Component, pageProps }: AppProps) {
+type MyAppProps = AppProps & {
+  Component: ComponentType; // Use ComponentType instead of NextComponentType
+};
+
+function MyApp({ Component, pageProps }: MyAppProps) {
   useEffect(() => {
     // Your global useEffect logic (if needed)
   }, []);
 
-  return <Component {...pageProps} />;
+  // Check if Component exists before rendering
+  return Component ? Component :pageProps ;
 }
 
 export default MyApp;

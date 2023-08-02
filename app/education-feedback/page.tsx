@@ -1,6 +1,6 @@
 // app/education-feedback/page.tsx
 // @ts-nocheck
-// use client
+'use client'
 
 import { useEffect } from "react"; // Add the missing import for useEffect
 import { NextPage } from "next";

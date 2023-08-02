@@ -67,7 +67,7 @@ const EducationFeedbackPage: React.FC<EducationFeedbackPageProps> = ({ task }) =
             </Answer>
           )
         )}
-        <button onClick={handleChatButtonClick}>IMAGINE</button>
+        <button onClick={handleChatButtonClick}></button>
       </Chat>
     </Layout>
   );

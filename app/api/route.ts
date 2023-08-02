@@ -8,6 +8,20 @@ const replicate = new Replicate({
 const KEY = process.env.OPENAI_API_KEY
 const base_uri = 'https://api.openai.com/v1/chat/completions'
 
+const fetchData = async () => {
+  try {
+    const res = await fetch('/api/route', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        // Add any authentication headers here if needed
+        'Authorization': 'Bearer your-auth-token',
+      },
+      body: JSON.stringify({ query: task.desc }),
+    });
+  }
+}
+
 const headers = {
   'Content-Type': 'application/json',
   'Authorization': `Bearer ${KEY}`

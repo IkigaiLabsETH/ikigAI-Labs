@@ -16,7 +16,7 @@ const DynamicEducationFeedbackPage = dynamic(
 
 // Define your task here
 const task: Task = {
-  api: './route',
+  api: './api/route',
   desc: 'Your description',
   fromColor: 'Your color',
   title: 'Your title',

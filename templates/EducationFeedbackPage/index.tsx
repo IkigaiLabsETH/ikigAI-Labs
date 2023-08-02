@@ -1,6 +1,6 @@
 // templates/EducationFeedbackPage/index.tsx
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Task } from '@/interfaces/education';
 import Layout from '@/components/Layout';
 import Chat from '@/components/Chat';
@@ -42,6 +42,10 @@ const EducationFeedbackPage: React.FC<EducationFeedbackPageProps> = ({ task }) =
       console.error('Error:', error);
     }
   };
+
+  useEffect(() => {
+    fetchData(); // Call the API when the component mounts
+  }, []);
 
   return (
     <Layout>

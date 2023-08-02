@@ -19,7 +19,7 @@ const fetchData = async () => {
       },
       body: JSON.stringify({ query: task.desc }),
     });
-  }
+  } // <-- Add a semicolon here
 }
 
 const headers = {

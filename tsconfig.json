@@ -29,7 +29,6 @@
       "@/types/*": ["types/*"],
       "@/constants/*": ["constants/*"],
       "@/mocks/*": ["mocks/*"],
-      "@/app/*": ["app/*"],
       "@/interfaces/*": ["interfaces/*"]
     },
   },

@@ -97,12 +97,18 @@ const HomePage = () => {
               ]}
               addUser
             />
-            <Search
-              className="lg:absolute lg:left-0 lg:right-0 lg:bottom-0"
-              value={search}
-              onChange={(e: any) => setSearch(e.target.value)}
-              onSubmit={() => console.log("Submit")}
-            />
+        <Search
+            value={search}
+            onChange={(e: any) => setSearch(e.target.value)}
+            onSubmit={(e: React.FormEvent) => {
+                e.preventDefault();
+                fetchFromOpenAI();
+            }}
+        />
+        {/* ... other components ... */}
+        {loading && <div>Loading...</div>}
+        {apiData && <pre>{JSON.stringify(apiData, null, 2)}</pre>}
+        {/* ... other components ... */}
           </div>
           <div className="shrink-0 w-[18.5rem] ml-20 xl:ml-16 lg:w-full lg:ml-0 lg:mt-9">
             <div className="flex justify-between items-center mb-3 pb-3 border-b border-n-3 dark:border-n-5">

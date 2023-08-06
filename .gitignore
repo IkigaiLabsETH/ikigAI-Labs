@@ -34,3 +34,24 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# database
+/prisma/db.sqlite
+/prisma/db.sqlite-journal
+/db/db.sqlite
+
+# typescript
+*.tsbuildinfo
+.idea
+.swc
+
+# extracted language files
+/public/locales/$LOCALES
+
+.eslintcache
+
+# Sentry Auth Token
+.sentryclirc
+/volumes/
+schema.prismae
+*.sql

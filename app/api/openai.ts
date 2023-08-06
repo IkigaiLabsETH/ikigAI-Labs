@@ -4,6 +4,7 @@ import axios from "axios";
 
 const OPENAI_API_BASE_URL = "https://api.openai.com/v1";
 
+
 export async function fetchOpenAIResponse(query: string): Promise<string> {
   try {
     const response = await axios.post(

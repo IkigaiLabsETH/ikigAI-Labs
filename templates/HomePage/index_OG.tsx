@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Layout from "@/components/Layout";
 import Image from "@/components/Image";
@@ -9,10 +9,28 @@ import Users from "@/components/Users";
 import Search from "./Search";
 import Table from "./Table";
 
-import { chatRequest } from "@/mocks/chats";
+// import { chatRequest } from "@/mocks/chats";
+import { fetchOpenAIResponse } from '../../openai';
+
 
 const HomePage = () => {
     const [search, setSearch] = useState<string>("");
+
+    const [chatData, setChatData] = useState<string[]>([]);
+
+    useEffect(() => {
+        const fetchData = async () => {
+          try {
+            const response = await fetchOpenAIResponse("Your initial query here");
+            setChatData([...chatData, response]); // Add the response to the chat data
+          } catch (error) {
+            console.error("Error fetching data from OpenAI:", error);
+          }
+        };
+      
+        fetchData();
+      }, []);
+      
 
     return (
         <Layout>
@@ -21,7 +39,7 @@ const HomePage = () => {
                     className="object-cover"
                     src="/images/bg.jpg"
                     fill
-                    alt="ikigAI Labs XYZ"
+                    alt="ikigAI Labs XYZ background"
                 />
             </div>
             <div className="relative max-w-[72rem] w-full -mt-16 mx-auto px-12 pb-16 2xl:pb-12 xl:px-8 xl:pb-8 md:-mt-10 md:px-5 md:pb-5">
@@ -31,7 +49,7 @@ const HomePage = () => {
                         src="/images/logo-1.svg"
                         width={64}
                         height={64}
-                        alt="ikigAI Labs XYZ"
+                        alt="ikigAI Labs XYZ logo"
                     />
                 </div>
                 <div className="flex justify-between mb-8 md:block">
@@ -105,7 +123,7 @@ const HomePage = () => {
                         </div>
                     </div>
                 </div>
-                <Table items={chatRequest} />
+                <Table items={chatData} />
             </div>
         </Layout>
     );

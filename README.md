@@ -83,3 +83,93 @@ Udpate the backend and frontend queries to define the kind of prompt you want to
 
 
 GPT-3.5 and GPT-4 can now access plugins and other APIs through the OpenAI API. This expands the possibilities for external GPT applications. In addition, GPT-3.5 gets a 16k context window via API, four times larger than ChatGPT
+
+## Stack
+
+- ▲ [Next.js](https://nextjs.org/) for webapp
+- 🖼 [Chakra UI](https://chakra-ui.com/) for UI components
+- 📦 [Prisma](https://www.prisma.io/) for database
+- 🧠 [Replicate](https://replicate.com/), a platform for running machine learning models in the cloud
+- 💰 [Stripe](https://stripe.com/) for payments
+- 👩‍🎨 [Stable Diffusion](https://replicate.com/stability-ai/stable-diffusion) an open-source text-to-image generation model
+
+## Getting Started
+
+Install dependencies:
+
+```bash
+yarn install
+```
+
+You can use Docker to run a local postgres database and maildev server (accessible at http://localhost:1080):
+
+```bash
+docker-compose up -d
+```
+
+Create .env.local:
+
+```bash
+cp .env.example .env.local
+```
+
+Update environment variable values:
+
+```
+// Database connection string of your database (postgresql here)
+DATABASE_URL=postgresql://photoshot:photoshot@localhost:5432/photoshot
+// https://next-auth.js.org/configuration/options#nextauth_url
+NEXTAUTH_URL=http://localhost:3000
+
+// AWS S3 bucket info (for storing pictures)
+S3_UPLOAD_KEY=
+S3_UPLOAD_SECRET=
+S3_UPLOAD_BUCKET=
+S3_UPLOAD_REGION=
+
+// Replicate API token / username
+REPLICATE_API_TOKEN=
+REPLICATE_USERNAME=
+REPLICATE_MAX_TRAIN_STEPS=3000
+REPLICATE_NEGATIVE_PROMPT=
+REPLICATE_HD_VERSION_MODEL_ID=
+
+// Replicate instance token (should be rare)
+NEXT_PUBLIC_REPLICATE_INSTANCE_TOKEN=
+
+// Random secret for NextAuth
+SECRET=
+
+// SMTP server and email address to send emails from
+EMAIL_FROM=
+EMAIL_SERVER=smtp://localhost:1080
+
+// Stripe API key
+STRIPE_SECRET_KEY=
+
+// Price of a studio in cents (ie: 1000 = $10)
+NEXT_PUBLIC_STRIPE_STUDIO_PRICE=
+
+// Amount of allowed shots per studio
+NEXT_PUBLIC_STUDIO_SHOT_AMOUNT=
+
+// Prompt wizard
+OPENAI_API_KEY=
+OPENAI_API_SEED_PROMPT=
+```
+
+Run migrations
+
+```bash
+yarn prisma:migrate:dev
+```
+
+Run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

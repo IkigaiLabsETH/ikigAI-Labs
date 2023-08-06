@@ -14,7 +14,7 @@ export default function Home() {
       setAudio('')
       setVideo('')
       setText('')
-      const response = await fetch('/api/gpt', {
+      const response = await fetch('/api/route', {
         method: "POST",
         body: JSON.stringify({
           query: input

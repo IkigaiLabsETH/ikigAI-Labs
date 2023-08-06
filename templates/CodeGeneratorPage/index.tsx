@@ -6,9 +6,33 @@ import Question from "@/components/Question";
 import Answer from "@/components/Answer";
 import Code from "@/components/Code";
 
+import { useEffect, useState } from "react";
+import axios from "axios";
+
 import { itemsCode, code, actions } from "@/mocks/code";
 
 const CodeGeneratorPage = () => {
+    const [apiData, setApiData] = useState<any>(null);
+    const [loading, setLoading] = useState<boolean>(false);
+
+    useEffect(() => {
+        fetchFromOpenAI();
+    }, []);
+
+    const fetchFromOpenAI = async () => {
+        setLoading(true);
+        try {
+            const response = await axios.post("/api/openai", {
+                query: "Your code generation prompt goes here", // Replace with the desired prompt
+            });
+            setApiData(response.data);
+        } catch (error) {
+            console.error("Error fetching code from OpenAI:", error);
+        } finally {
+            setLoading(false);
+        }
+    };
+
     return (
         <Layout>
             <Chat background="/images/bg-6.jpg">
@@ -82,6 +106,8 @@ const CodeGeneratorPage = () => {
                         actionsCell
                     />
                 </Answer>
+                {loading && <div>Loading...</div>}
+                {apiData && <pre>{JSON.stringify(apiData, null, 2)}</pre>}
             </Chat>
         </Layout>
     );

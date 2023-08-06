@@ -9,27 +9,13 @@ import Users from "@/components/Users";
 import Search from "./Search";
 import Table from "./Table";
 
-// import { chatRequest } from "@/mocks/chats";
-import { fetchOpenAIResponse } from '../../openai';
+import { chatRequest } from "@/mocks/chats";
 
 
 const HomePage = () => {
     const [search, setSearch] = useState<string>("");
 
-    const [chatData, setChatData] = useState<string[]>([]);
 
-    useEffect(() => {
-        const fetchData = async () => {
-          try {
-            const response = await fetchOpenAIResponse("Your initial query here");
-            setChatData([...chatData, response]); // Add the response to the chat data
-          } catch (error) {
-            console.error("Error fetching data from OpenAI:", error);
-          }
-        };
-      
-        fetchData();
-      }, []);
       
 
     return (
@@ -123,7 +109,7 @@ const HomePage = () => {
                         </div>
                     </div>
                 </div>
-                <Table items={chatData} />
+                <Table items={chatRequest} />
             </div>
         </Layout>
     );

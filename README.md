@@ -124,6 +124,11 @@ GPT-3.5 and GPT-4 can now access plugins and other APIs through the OpenAI API. 
 - 💰 [Stripe](https://stripe.com/) for payments
 - 👩‍🎨 [Stable Diffusion](https://replicate.com/stability-ai/stable-diffusion) an open-source text-to-image generation model
 
+- [OpenAI Functions](https://platform.openai.com/docs/guides/gpt/function-calling) - AI completions
+- [Vercel AI SDK](https://sdk.vercel.ai/docs) – AI streaming library
+- [Vercel](https://vercel.com) – deployments
+- [TailwindCSS](https://tailwindcss.com/) – styles
+
 ## Getting Started
 
 Install dependencies:

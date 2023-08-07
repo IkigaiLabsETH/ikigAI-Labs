@@ -105,6 +105,7 @@
     "csstype": "^3.0.10",
     "emoji-picker-react": "^4.4.7",
     "remark-gfm": "^3.0.1",
+    "mongoose": "^6.10.0",
     "sonner": "^0.5.0"
   },
   "devDependencies": {

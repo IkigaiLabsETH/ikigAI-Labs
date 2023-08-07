@@ -343,7 +343,7 @@ Documentation: [https://beta.openai.com/docs/api-reference/embeddings](https://b
 })();
 ```
 
-<p align="center"><i>Did you enjoy using this? Give it some love with a star! 🌟</i></p>
+<p align="left"><i>Did you enjoy using this? Give it some love with a star! 🌟</i></p>
 
 
 

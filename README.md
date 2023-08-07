@@ -26,7 +26,6 @@ Whether you're looking to chat with a virtual assistant, improve your coding ski
 - Unlimited local storage (desktop)
 - Runs locally (desktop)
 
-
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -50,7 +49,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
 
 ### OpenAI Magic with GPT-4.20
 
@@ -94,6 +92,7 @@ There is the option to add Stripe, which is currently configured for subscriptio
 The following steps need to be completed to add one new prompt on the backend and frontend.
 
 ### Part 1: Frontend
+
 Head to `./src/tools/` to add the option to use a prompt on the frontend:
 
 - Copy an existing prompt structure, and relabel the title, description, examples (eg, summarize.js -> helloworld.js)
@@ -101,6 +100,7 @@ Head to `./src/tools/` to add the option to use a prompt on the frontend:
 - Then import the new file add and it to the array on index.js
 
 ### Part 2: Backend
+
 Head to `/routes/ai/` to add to the backend a new file
 
 - Copy an existing file prompt call such as (eg. summarize.js -> hellowworld.js)
@@ -110,8 +110,8 @@ Head to `/routes/ai/` to add to the backend a new file
 Restart the client and backend server. The new prompt should show up. I've added an example hello world for testing purposes.
 
 ### Part 3: Customise Promtps
-Udpate the backend and frontend queries to define the kind of prompt you want to query OpenAI with, as well as the kind of output you wish. There are examples for plaintext and listed prompts as part of this process.
 
+Udpate the backend and frontend queries to define the kind of prompt you want to query OpenAI with, as well as the kind of output you wish. There are examples for plaintext and listed prompts as part of this process.
 
 GPT-3.5 and GPT-4 can now access plugins and other APIs through the OpenAI API. This expands the possibilities for external GPT applications. In addition, GPT-3.5 gets a 16k context window via API, four times larger than ChatGPT
 
@@ -214,8 +214,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Usage
 
 ### Initializing
+
 ```js
-const OpenAI = require('openai-api');
+const OpenAI = require("openai-api");
 
 // Load your key from an environment variable or secret management service
 // (do not include your key directly in your code)
@@ -225,27 +226,29 @@ const openai = new OpenAI(OPENAI_API_KEY);
 ```
 
 ### Completion API call
+
 ```js
 (async () => {
-    const gptResponse = await openai.complete({
-        engine: 'davinci',
-        prompt: 'this is a test',
-        maxTokens: 5,
-        temperature: 0.9,
-        topP: 1,
-        presencePenalty: 0,
-        frequencyPenalty: 0,
-        bestOf: 1,
-        n: 1,
-        stream: false,
-        stop: ['\n', "testing"]
-    });
+  const gptResponse = await openai.complete({
+    engine: "davinci",
+    prompt: "this is a test",
+    maxTokens: 5,
+    temperature: 0.9,
+    topP: 1,
+    presencePenalty: 0,
+    frequencyPenalty: 0,
+    bestOf: 1,
+    n: 1,
+    stream: false,
+    stop: ["\n", "testing"],
+  });
 
-    console.log(gptResponse.data);
+  console.log(gptResponse.data);
 })();
 ```
 
 #### Example of a successful completion response:
+
 ```js
 {
     id: 'some-long-id',
@@ -267,33 +270,34 @@ const openai = new OpenAI(OPENAI_API_KEY);
 
 ```js
 (async () => {
-    const gptResponse = await openai.search({
-        engine: 'davinci',
-        documents: ["White House", "hospital", "school"],
-        query: "the president"
-    });
+  const gptResponse = await openai.search({
+    engine: "davinci",
+    documents: ["White House", "hospital", "school"],
+    query: "the president",
+  });
 
-    console.log(gptResponse.data);
+  console.log(gptResponse.data);
 })();
 ```
-
 
 ### Answers API call
 
 ```js
 (async () => {
-    const gptResponse = await openai.answers({
-      "documents": ["Puppy A is happy.", "Puppy B is sad."],
-      "question": "which puppy is happy?",
-      "search_model": "ada",
-      "model": "curie",
-      "examples_context": "In 2017, U.S. life expectancy was 78.6 years.",
-      "examples": [["What is human life expectancy in the United States?", "78 years."]],
-      "max_tokens": 5,
-      "stop": ["\n", "<|endoftext|>"],
-    });
+  const gptResponse = await openai.answers({
+    documents: ["Puppy A is happy.", "Puppy B is sad."],
+    question: "which puppy is happy?",
+    search_model: "ada",
+    model: "curie",
+    examples_context: "In 2017, U.S. life expectancy was 78.6 years.",
+    examples: [
+      ["What is human life expectancy in the United States?", "78 years."],
+    ],
+    max_tokens: 5,
+    stop: ["\n", "<|endoftext|>"],
+  });
 
-    console.log(gptResponse.data);
+  console.log(gptResponse.data);
 })();
 ```
 
@@ -302,15 +306,15 @@ const openai = new OpenAI(OPENAI_API_KEY);
 ```js
 (async () => {
   const gptResponse = await openai.classification({
-    "examples": [
+    examples: [
       ["A happy moment", "Positive"],
       ["I am sad.", "Negative"],
-      ["I am feeling awesome", "Positive"]
+      ["I am feeling awesome", "Positive"],
     ],
-    "labels": ["Positive", "Negative", "Neutral"],
-    "query": "It is a raining day :(",
-    "search_model": "ada",
-    "model": "curie"
+    labels: ["Positive", "Negative", "Neutral"],
+    query: "It is a raining day :(",
+    search_model: "ada",
+    model: "curie",
   });
 
   console.log(gptResponse.data);
@@ -321,24 +325,21 @@ const openai = new OpenAI(OPENAI_API_KEY);
 
 ```js
 (async () => {
-    const gptResponse = await openai.engines();
+  const gptResponse = await openai.engines();
 
-    console.log(gptResponse.data);
+  console.log(gptResponse.data);
 })();
 ```
 
 ### Embeddings API call
+
 Documentation: [https://beta.openai.com/docs/api-reference/embeddings](https://beta.openai.com/docs/api-reference/embeddings)
 
 ```js
 (async () => {
   const gptResponse = await openai.embeddings({
-    "engine": "text-similarity-babbage-001",
-    "input": [
-      "A happy moment",
-      "I am sad.",
-      "I am feeling awesome"
-    ],
+    engine: "text-similarity-babbage-001",
+    input: ["A happy moment", "I am sad.", "I am feeling awesome"],
   });
 
   console.log(gptResponse.data); // see index.d.ts interface Embedding
@@ -347,7 +348,300 @@ Documentation: [https://beta.openai.com/docs/api-reference/embeddings](https://b
 
 <p align="left"><i>Did you enjoy using this? Give it some love with a star! 🌟</i></p>
 
+//
 
+# OpenAI Edge
 
+A TypeScript module for querying OpenAI's API using `fetch` (a standard Web API)
+instead of `axios`. This is a drop-in replacement for the official `openai`
+module (which has `axios` as a dependency).
 
+As well as reducing the bundle size, removing the dependency means we can query
+OpenAI from edge environments. Edge functions such as Next.js Edge API Routes
+are very fast and, unlike lambda functions, allow streaming data to the client.
 
+The latest version of this module has feature parity with the official `v3.3.0`.
+
+> **Update July 2023:** The official `openai` library will use `fetch` in v4,
+> hopefully making `openai-edge` redundant. You can try it in beta now, more
+> info here: https://github.com/openai/openai-node/discussions/182
+
+## Installation
+
+```shell
+yarn add openai-edge
+```
+
+or
+
+```shell
+npm install openai-edge
+```
+
+## Responses
+
+Every method returns a promise resolving to the standard `fetch` response i.e.
+`Promise<Response>`. Since `fetch` doesn't have built-in support for types in
+its response data, `openai-edge` includes an export `ResponseTypes` which you
+can use to assert the correct type on the JSON response:
+
+```typescript
+import { Configuration, OpenAIApi, ResponseTypes } from "openai-edge";
+
+const configuration = new Configuration({
+  apiKey: "YOUR-API-KEY",
+});
+const openai = new OpenAIApi(configuration);
+
+const response = await openai.createImage({
+  prompt: "A cute baby sea otter",
+  size: "512x512",
+  response_format: "url",
+});
+
+const data = (await response.json()) as ResponseTypes["createImage"];
+
+const url = data.data?.[0]?.url;
+
+console.log({ url });
+```
+
+## With Azure
+
+To use with Azure OpenAI Service you'll need to include an `api-key` header and
+an `api-version` query parameter:
+
+```typescript
+const config = new Configuration({
+  apiKey: AZURE_OPENAI_API_KEY,
+  baseOptions: {
+    headers: {
+      "api-key": AZURE_OPENAI_API_KEY,
+    },
+  },
+  basePath: `https://YOUR_RESOURCE_NAME.openai.azure.com/openai/deployments/YOUR_DEPLOYMENT_NAME`,
+  defaultQueryParams: new URLSearchParams({
+    "api-version": AZURE_OPENAI_API_VERSION,
+  }),
+});
+```
+
+## Without global fetch
+
+This module has zero dependencies and it expects `fetch` to be in the global
+namespace (as it is in web, edge and modern Node environments). If you're
+running in an environment without a global `fetch` defined e.g. an older version
+of Node.js, please pass `fetch` when creating your instance:
+
+```typescript
+import fetch from "node-fetch";
+
+const openai = new OpenAIApi(configuration, undefined, fetch);
+```
+
+## Without global FormData
+
+This module also expects to be in an environment where `FormData` is defined. If
+you're running in Node.js, that means using v18 or later.
+
+## Available methods
+
+- `cancelFineTune`
+- `createAnswer`
+- `createChatCompletion` (including support for `functions`)
+- `createClassification`
+- `createCompletion`
+- `createEdit`
+- `createEmbedding`
+- `createFile`
+- `createFineTune`
+- `createImage`
+- `createImageEdit`
+- `createImageVariation`
+- `createModeration`
+- `createSearch`
+- `createTranscription`
+- `createTranslation`
+- `deleteFile`
+- `deleteModel`
+- `downloadFile`
+- `listEngines`
+- `listFiles`
+- `listFineTuneEvents`
+- `listFineTunes`
+- `listModels`
+- `retrieveEngine`
+- `retrieveFile`
+- `retrieveFineTune`
+- `retrieveModel`
+
+## Edge route handler examples
+
+Here are some sample
+[Next.js Edge API Routes](https://nextjs.org/docs/api-routes/edge-api-routes)
+using `openai-edge`.
+
+### 1. Streaming chat with `gpt-3.5-turbo`
+
+Note that when using the `stream: true` option, OpenAI responds with
+[server-sent events](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events).
+Here's an example
+[react hook to consume SSEs](https://github.com/dan-kwiat/react-hooks#useserversentevents)
+and here's a [full NextJS example](https://github.com/dan-kwiat/chat-gpt-clone).
+
+```typescript
+import type { NextRequest } from "next/server";
+import { Configuration, OpenAIApi } from "openai-edge";
+
+const configuration = new Configuration({
+  apiKey: process.env.OPENAI_API_KEY,
+});
+const openai = new OpenAIApi(configuration);
+
+const handler = async (req: NextRequest) => {
+  const { searchParams } = new URL(req.url);
+
+  try {
+    const completion = await openai.createChatCompletion({
+      model: "gpt-3.5-turbo",
+      messages: [
+        { role: "system", content: "You are a helpful assistant." },
+        { role: "user", content: "Who won the world series in 2020?" },
+        {
+          role: "assistant",
+          content: "The Los Angeles Dodgers won the World Series in 2020.",
+        },
+        { role: "user", content: "Where was it played?" },
+      ],
+      max_tokens: 7,
+      temperature: 0,
+      stream: true,
+    });
+
+    return new Response(completion.body, {
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "text/event-stream;charset=utf-8",
+        "Cache-Control": "no-cache, no-transform",
+        "X-Accel-Buffering": "no",
+      },
+    });
+  } catch (error: any) {
+    console.error(error);
+
+    return new Response(JSON.stringify(error), {
+      status: 400,
+      headers: {
+        "content-type": "application/json",
+      },
+    });
+  }
+};
+
+export const config = {
+  runtime: "edge",
+};
+
+export default handler;
+```
+
+### 2. Text completion with Davinci
+
+```typescript
+import type { NextRequest } from "next/server";
+import { Configuration, OpenAIApi, ResponseTypes } from "openai-edge";
+
+const configuration = new Configuration({
+  apiKey: process.env.OPENAI_API_KEY,
+});
+const openai = new OpenAIApi(configuration);
+
+const handler = async (req: NextRequest) => {
+  const { searchParams } = new URL(req.url);
+
+  try {
+    const completion = await openai.createCompletion({
+      model: "text-davinci-003",
+      prompt: searchParams.get("prompt") ?? "Say this is a test",
+      max_tokens: 7,
+      temperature: 0,
+      stream: false,
+    });
+
+    const data = (await completion.json()) as ResponseTypes["createCompletion"];
+
+    return new Response(JSON.stringify(data.choices), {
+      status: 200,
+      headers: {
+        "content-type": "application/json",
+      },
+    });
+  } catch (error: any) {
+    console.error(error);
+
+    return new Response(JSON.stringify(error), {
+      status: 400,
+      headers: {
+        "content-type": "application/json",
+      },
+    });
+  }
+};
+
+export const config = {
+  runtime: "edge",
+};
+
+export default handler;
+```
+
+### 3. Creating an Image with DALL·E
+
+```typescript
+import type { NextRequest } from "next/server";
+import { Configuration, OpenAIApi, ResponseTypes } from "openai-edge";
+
+const configuration = new Configuration({
+  apiKey: process.env.OPENAI_API_KEY,
+});
+const openai = new OpenAIApi(configuration);
+
+const handler = async (req: NextRequest) => {
+  const { searchParams } = new URL(req.url);
+
+  try {
+    const image = await openai.createImage({
+      prompt: searchParams.get("prompt") ?? "A cute baby sea otter",
+      n: 1,
+      size: "512x512",
+      response_format: "url",
+    });
+
+    const data = (await image.json()) as ResponseTypes["createImage"];
+
+    const url = data.data?.[0]?.url;
+
+    return new Response(JSON.stringify({ url }), {
+      status: 200,
+      headers: {
+        "content-type": "application/json",
+      },
+    });
+  } catch (error: any) {
+    console.error(error);
+
+    return new Response(JSON.stringify(error), {
+      status: 400,
+      headers: {
+        "content-type": "application/json",
+      },
+    });
+  }
+};
+
+export const config = {
+  runtime: "edge",
+};
+
+export default handler;
+```

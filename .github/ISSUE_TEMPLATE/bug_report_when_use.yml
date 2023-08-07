@@ -8,7 +8,7 @@ body:
         ### Before submitting...
         Thanks for taking the time to fill out this bug report! Please confirm the following points before submitting:
 
-        ✅ I am using Anse's **official site** ([ltl.app](https://ltl.app)) or a fork version that has not been modified much. 
+        ✅ I am using ltl's **official site** ([ltl.app](https://ltl.app)) or a fork version that has not been modified much. 
         ✅ I have checked the bug was not already reported by searching on GitHub under issues.
         ✅ Use English to ask questions. This allows more people to search and participate in the issue.
   - type: input

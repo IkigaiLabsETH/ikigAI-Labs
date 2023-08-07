@@ -26,6 +26,11 @@ Whether you're looking to chat with a virtual assistant, improve your coding ski
 - Unlimited local storage (desktop)
 - Runs locally (desktop)
 
+
+- We use `IndexDB` to store local data, it will not be uploaded to the server.
+- Provides different conversations modes，support `Single Conversation`, `Continuous Conversation`, `OpenAI Image Generation`、`Stable Diffusion` and more.
+- Powered by `Provider plugin` , easy to extend AI platforms such as [OpenAI](https://openai.com/), [Replicate](https://replicate.com/), and also supports custom model parameters.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

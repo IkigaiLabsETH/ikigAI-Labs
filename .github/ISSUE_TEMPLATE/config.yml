@@ -2,7 +2,7 @@ blank_issues_enabled: false
 contact_links:
   - name: 📚 Documentation
     url: https://docs.ltl.app/
-    about: Check the documentation for usage of Anse, or make improvements to it.
+    about: Check the documentation for usage of ltl, or make improvements to it.
   - name: ⏱️ Roadmap
     url: https://github.com/orgs/ltl-app/projects/2
     about: Explore upcoming features.

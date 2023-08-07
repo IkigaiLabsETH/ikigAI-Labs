@@ -1,6 +1,7 @@
 {
   "name": "ikigai",
   "version": "0.1.0",
+  "homepage": "https://livethelife.tv",
   "license": "MIT",
   "description": "Use OpenAI's API",
   "private": true,

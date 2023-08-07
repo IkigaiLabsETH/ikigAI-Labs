@@ -1,6 +1,6 @@
 from typing import Any, List
 
-from reworkd_platform.web.api.memory.memory import AgentMemory
+from ltl_platform.web.api.memory.memory import AgentMemory
 
 
 class NullAgentMemory(AgentMemory):

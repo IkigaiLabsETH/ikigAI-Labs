@@ -3,7 +3,7 @@ from typing import List
 from fastapi import APIRouter
 from pydantic import BaseModel
 
-from reworkd_platform.web.api.memory.weaviate import WeaviateMemory
+from ltl_platform.web.api.memory.weaviate import WeaviateMemory
 
 router = APIRouter()
 

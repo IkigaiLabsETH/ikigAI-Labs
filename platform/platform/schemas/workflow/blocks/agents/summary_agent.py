@@ -14,12 +14,12 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores import Pinecone
 from tabula.io import read_pdf
 
-from reworkd_platform.schemas.agent import ModelSettings
-from reworkd_platform.schemas.user import UserBase
-from reworkd_platform.schemas.workflow.base import Block, BlockIOBase
-from reworkd_platform.services.aws.s3 import SimpleStorageService
-from reworkd_platform.settings import settings
-from reworkd_platform.web.api.agent.model_factory import create_model
+from ltl_platform.schemas.agent import ModelSettings
+from ltl_platform.schemas.user import UserBase
+from ltl_platform.schemas.workflow.base import Block, BlockIOBase
+from ltl_platform.services.aws.s3 import SimpleStorageService
+from ltl_platform.settings import settings
+from ltl_platform.web.api.agent.model_factory import create_model
 
 
 class SummaryAgentInput(BlockIOBase):

@@ -1,6 +1,6 @@
 import pytest
 
-from reworkd_platform.services.oauth_installers import installer_factory
+from ltl_platform.services.oauth_installers import installer_factory
 
 
 def test_installer_factory(mocker):

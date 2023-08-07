@@ -4,8 +4,8 @@ from unittest.mock import MagicMock
 import pytest
 from pytest_mock import MockFixture
 
-from reworkd_platform.schemas.workflow.base import Block, Edge, Node
-from reworkd_platform.services.worker.execution_engine import ExecutionEngine
+from ltl_platform.schemas.workflow.base import Block, Edge, Node
+from ltl_platform.services.worker.execution_engine import ExecutionEngine
 
 test_cases = [
     # Test case when there are no edges

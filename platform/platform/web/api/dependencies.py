@@ -6,10 +6,10 @@ from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm.exc import NoResultFound
 
-from reworkd_platform.db.crud.user import UserCrud
-from reworkd_platform.db.dependencies import get_db_session
-from reworkd_platform.schemas.user import UserBase, OrganizationRole
-from reworkd_platform.web.api.http_responses import forbidden
+from ltl_platform.db.crud.user import UserCrud
+from ltl_platform.db.dependencies import get_db_session
+from ltl_platform.schemas.user import UserBase, OrganizationRole
+from ltl_platform.web.api.http_responses import forbidden
 
 
 def user_crud(

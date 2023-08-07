@@ -4,12 +4,12 @@ from fastapi import Depends, Path
 from slack_sdk import WebClient
 from slack_sdk.oauth import AuthorizeUrlGenerator
 
-from reworkd_platform.db.crud.oauth import OAuthCrud
-from reworkd_platform.db.models.auth import OauthCredentials
-from reworkd_platform.schemas import UserBase
-from reworkd_platform.services.security import encryption_service
-from reworkd_platform.settings import Settings, settings as platform_settings
-from reworkd_platform.web.api.http_responses import forbidden
+from ltl_platform.db.crud.oauth import OAuthCrud
+from ltl_platform.db.models.auth import OauthCredentials
+from ltl_platform.schemas import UserBase
+from ltl_platform.services.security import encryption_service
+from ltl_platform.settings import Settings, settings as platform_settings
+from ltl_platform.web.api.http_responses import forbidden
 
 
 class OAuthInstaller(ABC):

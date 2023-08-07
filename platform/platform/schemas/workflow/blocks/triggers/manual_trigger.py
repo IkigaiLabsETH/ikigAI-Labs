@@ -1,7 +1,7 @@
 from typing import Any
 
-from reworkd_platform.schemas.workflow.base import Block, BlockIOBase
-from reworkd_platform.services.sockets import websockets
+from ltl_platform.schemas.workflow.base import Block, BlockIOBase
+from ltl_platform.services.sockets import websockets
 
 
 class ManualTriggerBlock(Block):

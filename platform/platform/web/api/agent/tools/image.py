@@ -4,11 +4,11 @@ from fastapi.responses import StreamingResponse as FastAPIStreamingResponse
 from replicate.exceptions import ModelError
 from replicate.exceptions import ReplicateError as ReplicateAPIError
 
-from reworkd_platform.settings import settings
-from reworkd_platform.web.api.agent.api_utils import rotate_keys
-from reworkd_platform.web.api.agent.stream_mock import stream_string
-from reworkd_platform.web.api.agent.tools.tool import Tool
-from reworkd_platform.web.api.errors import ReplicateError
+from ltl_platform.settings import settings
+from ltl_platform.web.api.agent.api_utils import rotate_keys
+from ltl_platform.web.api.agent.stream_mock import stream_string
+from ltl_platform.web.api.agent.tools.tool import Tool
+from ltl_platform.web.api.errors import ReplicateError
 
 
 async def get_replicate_image(input_str: str) -> str:

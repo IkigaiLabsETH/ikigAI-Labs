@@ -4,7 +4,7 @@ from typing import Any, List
 
 from loguru import logger
 
-from reworkd_platform.web.api.memory.memory import AgentMemory
+from ltl_platform.web.api.memory.memory import AgentMemory
 
 
 class MemoryWithFallback(AgentMemory):

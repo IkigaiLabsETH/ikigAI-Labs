@@ -1,4 +1,4 @@
-# reworkd_platform
+# ltl_platform
 
 This project was generated using fastapi_template.
 
@@ -11,7 +11,7 @@ To run the project use this set of commands:
 
 ```bash
 poetry install
-poetry run python -m reworkd_platform
+poetry run python -m ltl_platform
 ```
 
 This will start the server on the configured host.
@@ -46,8 +46,8 @@ docker-compose -f deploy/docker-compose.yml --project-directory . build
 ## Project structure
 
 ```bash
-$ tree "reworkd_platform"
-reworkd_platform
+$ tree "ltl_platform"
+ltl_platform
 ├── conftest.py  # Fixtures for all tests.
 ├── db  # module contains db configurations
 │   ├── dao  # Data Access Objects. Contains different classes to interact with database.
@@ -71,19 +71,19 @@ This application can be configured with environment variables.
 You can create `.env` file in the root directory and place all
 environment variables here.
 
-All environment variables should start with "REWORKD_PLATFORM_" prefix.
+All environment variables should start with "LTL_PLATFORM_" prefix.
 
-For example if you see in your "reworkd_platform/settings.py" a variable named like
-`random_parameter`, you should provide the "REWORKD_PLATFORM_RANDOM_PARAMETER"
+For example if you see in your "ltl_platform/settings.py" a variable named like
+`random_parameter`, you should provide the "LTL_PLATFORM_RANDOM_PARAMETER"
 variable to configure the value. This behaviour can be changed by overriding `env_prefix` property
-in `reworkd_platform.settings.Settings.Config`.
+in `ltl_platform.settings.Settings.Config`.
 
 An example of .env file:
 
 ```bash
-REWORKD_PLATFORM_RELOAD="True"
-REWORKD_PLATFORM_PORT="8000"
-REWORKD_PLATFORM_ENVIRONMENT="development"
+LTL_PLATFORM_RELOAD="True"
+LTL_PLATFORM_PORT="8000"
+LTL_PLATFORM_ENVIRONMENT="development"
 ```
 
 You can read more about BaseSettings class here: https://pydantic-docs.helpmanual.io/usage/settings/
@@ -124,7 +124,7 @@ For running tests on your local machine.
 I prefer doing it with docker:
 
 ```
-docker run -p "3306:3306" -e "MYSQL_PASSWORD=reworkd_platform" -e "MYSQL_USER=reworkd_platform" -e "MYSQL_DATABASE=reworkd_platform" -e ALLOW_EMPTY_PASSWORD=yes bitnami/mysql:8.0.30
+docker run -p "3306:3306" -e "MYSQL_PASSWORD=ltl_platform" -e "MYSQL_USER=ltl_platform" -e "MYSQL_DATABASE=ltl_platform" -e ALLOW_EMPTY_PASSWORD=yes bitnami/mysql:8.0.30
 ```
 
 2. Run the pytest.
@@ -143,7 +143,7 @@ poetry run flake8
 poetry run mypy .
 
 # Pytest
-poetry run pytest -vv --cov="reworkd_platform" .
+poetry run pytest -vv --cov="ltl_platform" .
 
 # Bump packages
 poetry self add poetry-plugin-up

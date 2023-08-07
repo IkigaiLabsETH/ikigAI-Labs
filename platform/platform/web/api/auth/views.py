@@ -7,19 +7,19 @@ from pydantic import BaseModel
 from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
 
-from reworkd_platform.db.crud.oauth import OAuthCrud
-from reworkd_platform.db.crud.organization import OrganizationCrud, OrganizationUsers
-from reworkd_platform.schemas import UserBase
-from reworkd_platform.schemas.user import OrganizationRole
-from reworkd_platform.services.oauth_installers import (
+from ltl_platform.db.crud.oauth import OAuthCrud
+from ltl_platform.db.crud.organization import OrganizationCrud, OrganizationUsers
+from ltl_platform.schemas import UserBase
+from ltl_platform.schemas.user import OrganizationRole
+from ltl_platform.services.oauth_installers import (
     installer_factory,
     OAuthInstaller,
 )
-from reworkd_platform.services.security import encryption_service
-from reworkd_platform.services.sockets import websockets
-from reworkd_platform.settings import settings
-from reworkd_platform.web.api.dependencies import get_current_user, get_organization
-from reworkd_platform.web.api.http_responses import not_found
+from ltl_platform.services.security import encryption_service
+from ltl_platform.services.sockets import websockets
+from ltl_platform.settings import settings
+from ltl_platform.web.api.dependencies import get_current_user, get_organization
+from ltl_platform.web.api.http_responses import not_found
 
 router = APIRouter()
 

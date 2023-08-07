@@ -3,7 +3,7 @@ from typing import List
 from sqlalchemy import DateTime, ForeignKey, Index, String, text
 from sqlalchemy.orm import Mapped, relationship, mapped_column
 
-from reworkd_platform.db.base import Base
+from ltl_platform.db.base import Base
 
 
 class UserSession(Base):

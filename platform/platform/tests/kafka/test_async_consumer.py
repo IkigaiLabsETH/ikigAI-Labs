@@ -1,7 +1,7 @@
 import pytest
 
-from reworkd_platform.services.kafka.consumers.base import AsyncConsumer
-from reworkd_platform.settings import Settings
+from ltl_platform.services.kafka.consumers.base import AsyncConsumer
+from ltl_platform.settings import Settings
 
 
 class MockedSettings(Settings):

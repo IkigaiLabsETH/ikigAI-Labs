@@ -1,1 +1,1 @@
-"""reworkd_platform API package."""
+"""ltl_platform API package."""

@@ -1,6 +1,6 @@
 from typing import Literal, TypeVar, Any
 
-from reworkd_platform.schemas.workflow.base import Block, BlockIOBase
+from ltl_platform.schemas.workflow.base import Block, BlockIOBase
 
 T = TypeVar("T", float, str)
 

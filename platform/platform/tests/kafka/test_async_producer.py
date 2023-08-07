@@ -1,8 +1,8 @@
 import pytest
 from pydantic import BaseModel
 
-from reworkd_platform.services.kafka.producers.base import AsyncProducer
-from reworkd_platform.settings import Settings
+from ltl_platform.services.kafka.producers.base import AsyncProducer
+from ltl_platform.settings import Settings
 
 
 class MockedSettings(Settings):

@@ -3,10 +3,10 @@ from typing import Any, List
 import aiohttp
 from fastapi.responses import StreamingResponse as FastAPIStreamingResponse
 
-from reworkd_platform.settings import settings
-from reworkd_platform.web.api.agent.stream_mock import stream_string
-from reworkd_platform.web.api.agent.tools.tool import Tool
-from reworkd_platform.web.api.agent.tools.utils import (
+from ltl_platform.settings import settings
+from ltl_platform.web.api.agent.stream_mock import stream_string
+from ltl_platform.web.api.agent.tools.tool import Tool
+from ltl_platform.web.api.agent.tools.utils import (
     CitedSnippet,
     summarize_with_sources,
 )

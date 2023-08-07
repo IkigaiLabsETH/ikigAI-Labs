@@ -3,8 +3,8 @@ from typing import Dict, List
 from sqlalchemy import and_, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from reworkd_platform.db.models.workflow import NodeBlockModel, WorkflowNodeModel
-from reworkd_platform.schemas.workflow.base import NodeUpsert
+from ltl_platform.db.models.workflow import NodeBlockModel, WorkflowNodeModel
+from ltl_platform.schemas.workflow.base import NodeUpsert
 
 
 class NodeCRUD:

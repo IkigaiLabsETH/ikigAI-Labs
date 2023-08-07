@@ -3,9 +3,9 @@ from typing import TypeVar
 from fastapi import Body, Depends, Request
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from reworkd_platform.db.crud.agent import AgentCRUD
-from reworkd_platform.db.dependencies import get_db_session
-from reworkd_platform.schemas.agent import (
+from ltl_platform.db.crud.agent import AgentCRUD
+from ltl_platform.db.dependencies import get_db_session
+from ltl_platform.schemas.agent import (
     Loop_Step,
     AgentRunCreate,
     AgentRun,
@@ -15,14 +15,14 @@ from reworkd_platform.schemas.agent import (
     AgentSummarize,
     AgentChat,
 )
-from reworkd_platform.schemas.user import UserBase
-from reworkd_platform.services.pinecone.pinecone import PineconeMemory
-from reworkd_platform.settings import settings
-from reworkd_platform.web.api.dependencies import get_current_user
-from reworkd_platform.web.api.memory.memory import AgentMemory
-from reworkd_platform.web.api.memory.memory_with_fallback import MemoryWithFallback
-from reworkd_platform.web.api.memory.null import NullAgentMemory
-from reworkd_platform.web.api.memory.weaviate import WeaviateMemory
+from ltl_platform.schemas.user import UserBase
+from ltl_platform.services.pinecone.pinecone import PineconeMemory
+from ltl_platform.settings import settings
+from ltl_platform.web.api.dependencies import get_current_user
+from ltl_platform.web.api.memory.memory import AgentMemory
+from ltl_platform.web.api.memory.memory_with_fallback import MemoryWithFallback
+from ltl_platform.web.api.memory.null import NullAgentMemory
+from ltl_platform.web.api.memory.weaviate import WeaviateMemory
 
 T = TypeVar(
     "T", AgentTaskAnalyze, AgentTaskExecute, AgentTaskCreate, AgentSummarize, AgentChat

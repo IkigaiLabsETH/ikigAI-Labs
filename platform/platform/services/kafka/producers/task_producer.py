@@ -1,10 +1,10 @@
 from fastapi import Depends
 
-from reworkd_platform.services.kafka.dependencies import get_kafka_producer
-from reworkd_platform.services.kafka.event_schemas import (
+from ltl_platform.services.kafka.dependencies import get_kafka_producer
+from ltl_platform.services.kafka.event_schemas import (
     WorkflowTaskEvent,
 )
-from reworkd_platform.services.kafka.producers.base import AsyncProducer
+from ltl_platform.services.kafka.producers.base import AsyncProducer
 
 
 class WorkflowTaskProducer:

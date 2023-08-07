@@ -2,7 +2,7 @@ from typing import Any, Dict, List
 
 from pydantic import BaseModel
 
-from reworkd_platform.schemas.workflow.base import Edge, Node
+from ltl_platform.schemas.workflow.base import Edge, Node
 
 
 class WorkflowTaskEvent(BaseModel):

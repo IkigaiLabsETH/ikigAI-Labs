@@ -1,6 +1,6 @@
 from fastapi.routing import APIRouter
 
-from reworkd_platform.web.api import (
+from ltl_platform.web.api import (
     agent,
     memory,
     monitoring,

@@ -2,7 +2,7 @@ import pytest
 from cryptography.fernet import Fernet
 from fastapi import HTTPException
 
-from reworkd_platform.services.security import EncryptionService
+from ltl_platform.services.security import EncryptionService
 
 
 def test_encrypt_decrypt():

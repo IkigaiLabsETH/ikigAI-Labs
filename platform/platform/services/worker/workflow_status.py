@@ -1,7 +1,7 @@
 from functools import wraps
 from typing import Any, Callable, Coroutine, TypeVar
 
-from reworkd_platform.services.sockets import websockets
+from ltl_platform.services.sockets import websockets
 
 STATUS_EVENT = "workflow:node:status"
 

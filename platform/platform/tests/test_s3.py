@@ -1,4 +1,4 @@
-from reworkd_platform.services.aws.s3 import SimpleStorageService
+from ltl_platform.services.aws.s3 import SimpleStorageService
 
 
 def test_create_signed_post(mocker):
@@ -10,7 +10,7 @@ def test_create_signed_post(mocker):
     boto3_mock = mocker.Mock()
     boto3_mock.generate_presigned_post.return_value = post_url
     mocker.patch(
-        "reworkd_platform.services.aws.s3.boto3_client", return_value=boto3_mock
+        "ltl_platform.services.aws.s3.boto3_client", return_value=boto3_mock
     )
 
     assert (

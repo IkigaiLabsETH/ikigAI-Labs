@@ -2,9 +2,9 @@ import itertools
 
 import pytest
 
-from reworkd_platform.schemas.agent import ModelSettings
-from reworkd_platform.schemas.user import UserBase
-from reworkd_platform.web.api.agent.model_factory import create_model
+from ltl_platform.schemas.agent import ModelSettings
+from ltl_platform.schemas.user import UserBase
+from ltl_platform.web.api.agent.model_factory import create_model
 
 
 @pytest.mark.parametrize(

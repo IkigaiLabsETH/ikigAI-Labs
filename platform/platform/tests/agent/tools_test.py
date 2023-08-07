@@ -1,10 +1,10 @@
 from typing import List, Type
 
-from reworkd_platform.web.api.agent.tools.conclude import Conclude
-from reworkd_platform.web.api.agent.tools.image import Image
-from reworkd_platform.web.api.agent.tools.reason import Reason
-from reworkd_platform.web.api.agent.tools.search import Search
-from reworkd_platform.web.api.agent.tools.tools import (
+from ltl_platform.web.api.agent.tools.conclude import Conclude
+from ltl_platform.web.api.agent.tools.image import Image
+from ltl_platform.web.api.agent.tools.reason import Reason
+from ltl_platform.web.api.agent.tools.search import Search
+from ltl_platform.web.api.agent.tools.tools import (
     Tool,
     format_tool_name,
     get_default_tool,

@@ -9,9 +9,9 @@ from langchain.document_loaders import PyPDFLoader
 from pinecone import Index  # import doesnt work on plane wifi
 from pydantic import BaseModel
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from reworkd_platform.settings import settings
-from reworkd_platform.timer import timed_function
-from reworkd_platform.web.api.memory.memory import AgentMemory
+from ltl_platform.settings import settings
+from ltl_platform.timer import timed_function
+from ltl_platform.web.api.memory.memory import AgentMemory
 import os
 
 OPENAI_EMBEDDING_DIM = 1536

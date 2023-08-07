@@ -3,12 +3,12 @@ from typing import Awaitable, Callable
 from fastapi import FastAPI
 from sqlalchemy.ext.asyncio import async_sessionmaker
 
-from reworkd_platform.db.meta import meta
-from reworkd_platform.db.models import load_all_models
-from reworkd_platform.db.utils import create_engine
-from reworkd_platform.services.kafka.lifetime import init_kafka, shutdown_kafka
-from reworkd_platform.services.pinecone.lifetime import init_pinecone
-from reworkd_platform.services.tokenizer.lifetime import init_tokenizer
+from ltl_platform.db.meta import meta
+from ltl_platform.db.models import load_all_models
+from ltl_platform.db.utils import create_engine
+from ltl_platform.services.kafka.lifetime import init_kafka, shutdown_kafka
+from ltl_platform.services.pinecone.lifetime import init_pinecone
+from ltl_platform.services.tokenizer.lifetime import init_tokenizer
 
 
 def _setup_db(app: FastAPI) -> None:  # pragma: no cover

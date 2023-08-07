@@ -1,7 +1,7 @@
 from sqlalchemy import String
 from sqlalchemy.orm import mapped_column
 
-from reworkd_platform.db.base import TrackedModel
+from ltl_platform.db.base import TrackedModel
 
 
 class Organization(TrackedModel):

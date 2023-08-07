@@ -9,8 +9,8 @@ from langchain.vectorstores import Weaviate
 from loguru import logger
 from weaviate import UnexpectedStatusCodeException
 
-from reworkd_platform.settings import settings
-from reworkd_platform.web.api.memory.memory import AgentMemory
+from ltl_platform.settings import settings
+from ltl_platform.web.api.memory.memory import AgentMemory
 
 
 def _default_schema(index_name: str, text_key: str) -> Dict[str, Any]:

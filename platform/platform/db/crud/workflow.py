@@ -5,20 +5,20 @@ from fastapi import Depends
 from sqlalchemy import and_, select, or_
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from reworkd_platform.db.crud.base import BaseCrud
-from reworkd_platform.db.crud.edge import EdgeCRUD
-from reworkd_platform.db.crud.node import NodeCRUD
-from reworkd_platform.db.dependencies import get_db_session
-from reworkd_platform.db.models.workflow import WorkflowModel
-from reworkd_platform.schemas.user import UserBase
-from reworkd_platform.schemas.workflow.base import (
+from ltl_platform.db.crud.base import BaseCrud
+from ltl_platform.db.crud.edge import EdgeCRUD
+from ltl_platform.db.crud.node import NodeCRUD
+from ltl_platform.db.dependencies import get_db_session
+from ltl_platform.db.models.workflow import WorkflowModel
+from ltl_platform.schemas.user import UserBase
+from ltl_platform.schemas.workflow.base import (
     Workflow,
     WorkflowFull,
     WorkflowUpdate,
     WorkflowCreate,
 )
-from reworkd_platform.web.api.dependencies import get_current_user
-from reworkd_platform.web.api.http_responses import forbidden
+from ltl_platform.web.api.dependencies import get_current_user
+from ltl_platform.web.api.http_responses import forbidden
 
 
 class WorkflowCRUD(BaseCrud):

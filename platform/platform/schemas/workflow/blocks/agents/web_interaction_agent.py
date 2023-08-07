@@ -2,7 +2,7 @@ from typing import Any
 
 from loguru import logger
 
-from reworkd_platform.schemas.workflow.base import Block, BlockIOBase
+from ltl_platform.schemas.workflow.base import Block, BlockIOBase
 
 
 class WebInteractionInput(BlockIOBase):

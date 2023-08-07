@@ -2,8 +2,8 @@ from unittest.mock import Mock
 
 import tiktoken
 
-from reworkd_platform.schemas.agent import LLM_MODEL_MAX_TOKENS
-from reworkd_platform.services.tokenizer.token_service import TokenService
+from ltl_platform.schemas.agent import LLM_MODEL_MAX_TOKENS
+from ltl_platform.services.tokenizer.token_service import TokenService
 
 encoding = tiktoken.get_encoding("cl100k_base")
 

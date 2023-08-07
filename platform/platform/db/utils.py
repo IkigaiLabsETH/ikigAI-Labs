@@ -3,8 +3,8 @@ from ssl import CERT_REQUIRED
 from sqlalchemy import text
 from sqlalchemy.ext.asyncio import AsyncEngine, create_async_engine
 
-from reworkd_platform.services.ssl import get_ssl_context
-from reworkd_platform.settings import settings
+from ltl_platform.services.ssl import get_ssl_context
+from ltl_platform.settings import settings
 
 
 def create_engine() -> AsyncEngine:

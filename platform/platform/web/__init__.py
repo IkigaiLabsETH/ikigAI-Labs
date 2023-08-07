@@ -1,1 +1,1 @@
-"""WEB API for reworkd_platform."""
+"""WEB API for ltl_platform."""

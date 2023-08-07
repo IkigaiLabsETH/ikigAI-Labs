@@ -2,8 +2,8 @@ import re
 
 import pytest
 
-from reworkd_platform.schemas.workflow.base import Block
-from reworkd_platform.services.worker.execution_engine import (
+from ltl_platform.schemas.workflow.base import Block
+from ltl_platform.services.worker.execution_engine import (
     get_template,
     replace_templates,
 )

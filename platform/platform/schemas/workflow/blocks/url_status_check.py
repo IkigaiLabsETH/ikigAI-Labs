@@ -4,7 +4,7 @@ import aiohttp
 from loguru import logger
 from requests import RequestException
 
-from reworkd_platform.schemas.workflow.base import Block, BlockIOBase
+from ltl_platform.schemas.workflow.base import Block, BlockIOBase
 
 
 class UrlStatusCheckBlockInput(BlockIOBase):

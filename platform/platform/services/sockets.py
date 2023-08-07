@@ -6,9 +6,9 @@ from pusher import Pusher
 from pusher.errors import PusherBadRequest
 from requests import ReadTimeout
 
-from reworkd_platform.schemas import UserBase
-from reworkd_platform.settings import Settings
-from reworkd_platform.settings import settings as app_settings
+from ltl_platform.schemas import UserBase
+from ltl_platform.settings import Settings
+from ltl_platform.settings import settings as app_settings
 
 
 class WebsocketService:

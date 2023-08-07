@@ -4,7 +4,7 @@ from fastapi import APIRouter, Depends
 from fastapi.responses import StreamingResponse as FastAPIStreamingResponse
 from pydantic import BaseModel
 
-from reworkd_platform.schemas.agent import (
+from ltl_platform.schemas.agent import (
     AgentRun,
     AgentTaskAnalyze,
     AgentTaskExecute,
@@ -13,12 +13,12 @@ from reworkd_platform.schemas.agent import (
     AgentChat,
     NewTasksResponse,
 )
-from reworkd_platform.web.api.agent.agent_service.agent_service import AgentService
-from reworkd_platform.web.api.agent.agent_service.agent_service_provider import (
+from ltl_platform.web.api.agent.agent_service.agent_service import AgentService
+from ltl_platform.web.api.agent.agent_service.agent_service_provider import (
     get_agent_service,
 )
-from reworkd_platform.web.api.agent.analysis import Analysis
-from reworkd_platform.web.api.agent.dependancies import (
+from ltl_platform.web.api.agent.analysis import Analysis
+from ltl_platform.web.api.agent.dependancies import (
     agent_analyze_validator,
     agent_chat_validator,
     agent_create_validator,
@@ -26,7 +26,7 @@ from reworkd_platform.web.api.agent.dependancies import (
     agent_start_validator,
     agent_summarize_validator,
 )
-from reworkd_platform.web.api.agent.tools.tools import get_external_tools, get_tool_name
+from ltl_platform.web.api.agent.tools.tools import get_external_tools, get_tool_name
 
 router = APIRouter()
 

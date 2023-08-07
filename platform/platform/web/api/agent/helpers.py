@@ -10,8 +10,8 @@ from openai.error import (
     InvalidRequestError,
 )
 
-from reworkd_platform.schemas.agent import ModelSettings
-from reworkd_platform.web.api.errors import OpenAIError
+from ltl_platform.schemas.agent import ModelSettings
+from ltl_platform.web.api.errors import OpenAIError
 
 T = TypeVar("T")
 

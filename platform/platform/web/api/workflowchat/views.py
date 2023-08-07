@@ -3,21 +3,21 @@ from typing import Literal
 from loguru import logger
 from fastapi import APIRouter
 from fastapi.responses import StreamingResponse as FastAPIStreamingResponse
-from reworkd_platform.services.aws.s3 import SimpleStorageService
+from ltl_platform.services.aws.s3 import SimpleStorageService
 from pydantic import BaseModel, Field
 from fastapi import Depends
 from langchain import LLMChain, PromptTemplate
-from reworkd_platform.settings import settings
-from reworkd_platform.web.api.dependencies import get_organization_user
+from ltl_platform.settings import settings
+from ltl_platform.web.api.dependencies import get_organization_user
 
-from reworkd_platform.schemas import (
+from ltl_platform.schemas import (
     ModelSettings,
     UserBase,
 )
-from reworkd_platform.web.api.agent.model_factory import create_model
-from reworkd_platform.web.api.agent.tools.image import Image
-from reworkd_platform.web.api.dependencies import get_current_user
-from reworkd_platform.services.pinecone.pinecone import PineconeMemory
+from ltl_platform.web.api.agent.model_factory import create_model
+from ltl_platform.web.api.agent.tools.image import Image
+from ltl_platform.web.api.dependencies import get_current_user
+from ltl_platform.services.pinecone.pinecone import PineconeMemory
 from lanarky.responses import StreamingResponse
 
 router = APIRouter()

@@ -4,7 +4,7 @@ from typing import Union
 
 from loguru import logger
 
-from reworkd_platform.settings import settings
+from ltl_platform.settings import settings
 
 
 class InterceptHandler(logging.Handler):

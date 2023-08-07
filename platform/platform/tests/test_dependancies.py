@@ -1,6 +1,6 @@
 import pytest
 
-from reworkd_platform.web.api.agent import dependancies
+from ltl_platform.web.api.agent import dependancies
 
 
 @pytest.mark.anyio

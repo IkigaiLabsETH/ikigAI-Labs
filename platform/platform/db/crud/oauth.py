@@ -5,10 +5,10 @@ from fastapi import Depends
 from sqlalchemy import select, func
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from reworkd_platform.db.crud.base import BaseCrud
-from reworkd_platform.db.dependencies import get_db_session
-from reworkd_platform.db.models.auth import OauthCredentials
-from reworkd_platform.schemas import UserBase
+from ltl_platform.db.crud.base import BaseCrud
+from ltl_platform.db.dependencies import get_db_session
+from ltl_platform.db.models.auth import OauthCredentials
+from ltl_platform.schemas import UserBase
 
 
 class OAuthCrud(BaseCrud):

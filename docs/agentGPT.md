@@ -24,7 +24,7 @@ The invention of the **Generative Pre-trained Transformer (GPT)** is one of the 
 advancements in AI technology. The GPTs powering today's **Large Language Models (LLMs)** demonstrate a _remarkable
 ability for reasoning, understanding, and planning_. However, their true potential has yet to be fully realized.
 
-At **Reworkd**, we believe that the _true power of LLMs lies in agentic behavior_. By engineering a system that draws on
+At **LTL**, we believe that the _true power of LLMs lies in agentic behavior_. By engineering a system that draws on
 LLMs' emergent abilities and providing an ecosystem that supports environmental interactions, we can draw out the full
 potential of models like GPT-4. Here's how AgentGPT works.
 

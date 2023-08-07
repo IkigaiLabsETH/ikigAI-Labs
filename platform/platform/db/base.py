@@ -6,8 +6,8 @@ from sqlalchemy import DateTime, String, func
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 
-from reworkd_platform.db.meta import meta
-from reworkd_platform.web.api.http_responses import not_found
+from ltl_platform.db.meta import meta
+from ltl_platform.web.api.http_responses import not_found
 
 T = TypeVar("T", bound="Base")
 

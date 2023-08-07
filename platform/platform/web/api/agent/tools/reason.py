@@ -2,7 +2,7 @@ from fastapi.responses import StreamingResponse as FastAPIStreamingResponse
 from lanarky.responses import StreamingResponse
 from langchain import LLMChain
 
-from reworkd_platform.web.api.agent.tools.tool import Tool
+from ltl_platform.web.api.agent.tools.tool import Tool
 
 
 class Reason(Tool):
@@ -14,7 +14,7 @@ class Reason(Tool):
     async def call(
         self, goal: str, task: str, input_str: str
     ) -> FastAPIStreamingResponse:
-        from reworkd_platform.web.api.agent.prompts import execute_task_prompt
+        from ltl_platform.web.api.agent.prompts import execute_task_prompt
 
         chain = LLMChain(llm=self.model, prompt=execute_task_prompt)
 

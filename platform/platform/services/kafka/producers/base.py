@@ -4,8 +4,8 @@ from aiokafka import AIOKafkaProducer
 from loguru import logger
 from pydantic import BaseModel
 
-from reworkd_platform.services.ssl import get_ssl_context
-from reworkd_platform.settings import Settings
+from ltl_platform.services.ssl import get_ssl_context
+from ltl_platform.settings import Settings
 
 TOPICS = Literal["workflow_task"]
 

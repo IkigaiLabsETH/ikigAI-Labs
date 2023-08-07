@@ -1,6 +1,6 @@
 import pytest
 
-from reworkd_platform.web.api.memory.memory_with_fallback import MemoryWithFallback
+from ltl_platform.web.api.memory.memory_with_fallback import MemoryWithFallback
 
 
 @pytest.mark.parametrize(

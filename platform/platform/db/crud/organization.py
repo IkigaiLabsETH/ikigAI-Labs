@@ -7,12 +7,12 @@ from sqlalchemy import select, and_
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import aliased
 
-from reworkd_platform.db.crud.base import BaseCrud
-from reworkd_platform.db.dependencies import get_db_session
-from reworkd_platform.db.models.auth import Organization, OrganizationUser
-from reworkd_platform.db.models.user import User
-from reworkd_platform.schemas import UserBase
-from reworkd_platform.web.api.dependencies import get_current_user
+from ltl_platform.db.crud.base import BaseCrud
+from ltl_platform.db.dependencies import get_db_session
+from ltl_platform.db.models.auth import Organization, OrganizationUser
+from ltl_platform.db.models.user import User
+from ltl_platform.schemas import UserBase
+from ltl_platform.web.api.dependencies import get_current_user
 
 
 class OrgUser(BaseModel):

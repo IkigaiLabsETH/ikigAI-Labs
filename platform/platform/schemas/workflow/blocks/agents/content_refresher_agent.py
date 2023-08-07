@@ -6,10 +6,10 @@ from bs4 import BeautifulSoup
 from loguru import logger
 from scrapingbee import ScrapingBeeClient
 
-from reworkd_platform.schemas.workflow.base import Block, BlockIOBase
-from reworkd_platform.services.anthropic import ClaudeService, HumanAssistantPrompt
-from reworkd_platform.services.sockets import websockets
-from reworkd_platform.settings import settings
+from ltl_platform.schemas.workflow.base import Block, BlockIOBase
+from ltl_platform.services.anthropic import ClaudeService, HumanAssistantPrompt
+from ltl_platform.services.sockets import websockets
+from ltl_platform.settings import settings
 
 
 class ContentRefresherInput(BlockIOBase):

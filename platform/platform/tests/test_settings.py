@@ -2,7 +2,7 @@ from typing import Dict, Any
 
 import pytest
 
-from reworkd_platform.settings import Settings
+from ltl_platform.settings import Settings
 
 
 @pytest.mark.parametrize(

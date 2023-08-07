@@ -10,33 +10,33 @@ from langchain.schema import HumanMessage
 from loguru import logger
 from pydantic import ValidationError
 
-from reworkd_platform.schemas.agent import ModelSettings
-from reworkd_platform.services.tokenizer.token_service import TokenService
-from reworkd_platform.web.api.agent.agent_service.agent_service import AgentService
-from reworkd_platform.web.api.agent.analysis import Analysis, AnalysisArguments
-from reworkd_platform.web.api.agent.helpers import (
+from ltl_platform.schemas.agent import ModelSettings
+from ltl_platform.services.tokenizer.token_service import TokenService
+from ltl_platform.web.api.agent.agent_service.agent_service import AgentService
+from ltl_platform.web.api.agent.analysis import Analysis, AnalysisArguments
+from ltl_platform.web.api.agent.helpers import (
     call_model_with_handling,
     openai_error_handler,
     parse_with_handling,
 )
-from reworkd_platform.web.api.agent.model_factory import WrappedChatOpenAI
-from reworkd_platform.web.api.agent.prompts import (
+from ltl_platform.web.api.agent.model_factory import WrappedChatOpenAI
+from ltl_platform.web.api.agent.prompts import (
     analyze_task_prompt,
     chat_prompt,
     create_tasks_prompt,
     start_goal_prompt,
 )
-from reworkd_platform.web.api.agent.task_output_parser import TaskOutputParser
-from reworkd_platform.web.api.agent.tools.open_ai_function import get_tool_function
-from reworkd_platform.web.api.agent.tools.tools import (
+from ltl_platform.web.api.agent.task_output_parser import TaskOutputParser
+from ltl_platform.web.api.agent.tools.open_ai_function import get_tool_function
+from ltl_platform.web.api.agent.tools.tools import (
     get_default_tool,
     get_tool_from_name,
     get_tool_name,
     get_user_tools,
 )
-from reworkd_platform.web.api.agent.tools.utils import summarize
-from reworkd_platform.web.api.errors import OpenAIError
-from reworkd_platform.web.api.memory.memory import AgentMemory
+from ltl_platform.web.api.agent.tools.utils import summarize
+from ltl_platform.web.api.errors import OpenAIError
+from ltl_platform.web.api.memory.memory import AgentMemory
 
 
 class OpenAIAgentService(AgentService):

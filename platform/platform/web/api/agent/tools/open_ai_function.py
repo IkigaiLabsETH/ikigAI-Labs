@@ -1,7 +1,7 @@
 from typing import Type, TypedDict
 
-from reworkd_platform.web.api.agent.tools.tool import Tool
-from reworkd_platform.web.api.agent.tools.tools import get_tool_name
+from ltl_platform.web.api.agent.tools.tool import Tool
+from ltl_platform.web.api.agent.tools.tools import get_tool_name
 
 
 class FunctionDescription(TypedDict):

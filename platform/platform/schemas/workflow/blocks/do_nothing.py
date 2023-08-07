@@ -1,6 +1,6 @@
 from typing import Any
 
-from reworkd_platform.schemas.workflow.base import Block, BlockIOBase
+from ltl_platform.schemas.workflow.base import Block, BlockIOBase
 
 
 class DoNothingBlock(Block):

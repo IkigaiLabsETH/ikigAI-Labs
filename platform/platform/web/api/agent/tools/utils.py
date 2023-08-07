@@ -26,7 +26,7 @@ def summarize(
     goal: str,
     text: str,
 ) -> FastAPIStreamingResponse:
-    from reworkd_platform.web.api.agent.prompts import summarize_prompt
+    from ltl_platform.web.api.agent.prompts import summarize_prompt
 
     chain = LLMChain(llm=model, prompt=summarize_prompt)
 
@@ -48,7 +48,7 @@ def summarize_with_sources(
     query: str,
     snippets: List[CitedSnippet],
 ) -> FastAPIStreamingResponse:
-    from reworkd_platform.web.api.agent.prompts import summarize_with_sources_prompt
+    from ltl_platform.web.api.agent.prompts import summarize_with_sources_prompt
 
     chain = LLMChain(llm=model, prompt=summarize_with_sources_prompt)
 

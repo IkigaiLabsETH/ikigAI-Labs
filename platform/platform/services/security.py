@@ -2,8 +2,8 @@ from typing import Union
 
 from cryptography.fernet import Fernet, InvalidToken
 
-from reworkd_platform.settings import settings
-from reworkd_platform.web.api.http_responses import forbidden
+from ltl_platform.settings import settings
+from ltl_platform.web.api.http_responses import forbidden
 
 
 class EncryptionService:

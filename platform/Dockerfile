@@ -30,7 +30,7 @@ RUN apt-get purge -y \
 COPY . /app/src/
 RUN poetry install --only main
 
-CMD ["/usr/local/bin/python", "-m", "reworkd_platform"]
+CMD ["/usr/local/bin/python", "-m", "ltl_platform"]
 
 FROM prod as dev
 

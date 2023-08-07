@@ -1,8 +1,8 @@
 import pytest
 from pytest_mock import MockFixture
 
-from reworkd_platform.db.crud.edge import EdgeCRUD
-from reworkd_platform.schemas.workflow.base import EdgeUpsert
+from ltl_platform.db.crud.edge import EdgeCRUD
+from ltl_platform.schemas.workflow.base import EdgeUpsert
 
 
 class TestEdgeCRUD:

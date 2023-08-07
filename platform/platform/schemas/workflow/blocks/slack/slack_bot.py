@@ -3,8 +3,8 @@ from typing import Any, Optional, Dict
 from loguru import logger
 from slack_sdk import WebClient
 
-from reworkd_platform.schemas.workflow.base import Block, BlockIOBase
-from reworkd_platform.services.security import encryption_service
+from ltl_platform.schemas.workflow.base import Block, BlockIOBase
+from ltl_platform.services.security import encryption_service
 
 
 class SlackWebhookInput(BlockIOBase):

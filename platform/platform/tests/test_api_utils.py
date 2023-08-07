@@ -2,8 +2,8 @@ from collections import Counter
 
 import pytest
 
-from reworkd_platform.schemas.agent import LLM_Model
-from reworkd_platform.web.api.agent.api_utils import rotate_keys
+from ltl_platform.schemas.agent import LLM_Model
+from ltl_platform.web.api.agent.api_utils import rotate_keys
 
 ITERATIONS = 10000
 

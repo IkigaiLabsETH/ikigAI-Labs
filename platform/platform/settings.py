@@ -6,7 +6,7 @@ from typing import List, Optional, Literal, Union
 from pydantic import BaseSettings
 from yarl import URL
 
-from reworkd_platform.constants import ENV_PREFIX
+from ltl_platform.constants import ENV_PREFIX
 
 TEMP_DIR = Path(gettempdir())
 
@@ -74,9 +74,9 @@ class Settings(BaseSettings):
     # Variables for the database
     db_host: str = "localhost"
     db_port: int = 3307
-    db_user: str = "reworkd_platform"
-    db_pass: str = "reworkd_platform"
-    db_base: str = "reworkd_platform"
+    db_user: str = "ltl_platform"
+    db_pass: str = "ltl_platform"
+    db_base: str = "ltl_platform"
     db_echo: bool = False
     db_ca_path: Optional[str] = None
 

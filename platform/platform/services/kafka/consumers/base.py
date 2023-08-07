@@ -7,8 +7,8 @@ from aiokafka import AIOKafkaConsumer, ConsumerRecord, TopicPartition
 from kafka.errors import IllegalStateError
 from loguru import logger
 
-from reworkd_platform.services.ssl import get_ssl_context
-from reworkd_platform.settings import Settings
+from ltl_platform.services.ssl import get_ssl_context
+from ltl_platform.settings import Settings
 
 
 class Deserializer(Protocol):

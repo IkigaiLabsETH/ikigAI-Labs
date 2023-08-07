@@ -1,6 +1,6 @@
 import pinecone
 
-from reworkd_platform.settings import settings
+from ltl_platform.settings import settings
 
 
 def init_pinecone() -> None:

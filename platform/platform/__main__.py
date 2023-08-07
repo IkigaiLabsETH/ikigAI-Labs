@@ -1,12 +1,12 @@
 import uvicorn
 
-from reworkd_platform.settings import settings
+from ltl_platform.settings import settings
 
 
 def main() -> None:
     """Entrypoint of the application."""
     uvicorn.run(
-        "reworkd_platform.web.application:get_app",
+        "ltl_platform.web.application:get_app",
         workers=settings.workers_count,
         host=settings.host,
         port=settings.port,

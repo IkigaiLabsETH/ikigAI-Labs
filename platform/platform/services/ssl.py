@@ -1,7 +1,7 @@
 from ssl import create_default_context, SSLContext
 from typing import List, Optional
 
-from reworkd_platform.settings import Settings
+from ltl_platform.settings import Settings
 
 MACOS_CERT_PATH = "/etc/ssl/cert.pem"
 DOCKER_CERT_PATH = "/etc/ssl/certs/ca-certificates.crt"

@@ -3,10 +3,10 @@ from typing import List
 
 from fastapi import FastAPI
 
-from reworkd_platform.services.kafka.consumers.base import AsyncConsumer
-from reworkd_platform.services.kafka.consumers.task_consumer import WorkflowTaskConsumer
-from reworkd_platform.services.kafka.producers.base import AsyncProducer
-from reworkd_platform.settings import settings
+from ltl_platform.services.kafka.consumers.base import AsyncConsumer
+from ltl_platform.services.kafka.consumers.task_consumer import WorkflowTaskConsumer
+from ltl_platform.services.kafka.producers.base import AsyncProducer
+from ltl_platform.settings import settings
 
 
 async def init_kafka(app: FastAPI) -> None:  # pragma: no cover

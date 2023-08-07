@@ -1,8 +1,8 @@
 from lanarky.responses import StreamingResponse
 from langchain import WikipediaAPIWrapper
 
-from reworkd_platform.web.api.agent.stream_mock import stream_string
-from reworkd_platform.web.api.agent.tools.tool import Tool
+from ltl_platform.web.api.agent.stream_mock import stream_string
+from ltl_platform.web.api.agent.tools.tool import Tool
 
 
 class Wikipedia(Tool):

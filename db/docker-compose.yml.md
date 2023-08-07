@@ -8,7 +8,7 @@ services:
       args:
         NEXT_PUBLIC_BACKEND_URL: 'http://localhost:8000'
         NEXTAUTH_URL: "http://localhost:3000"
-        DATABASE_URL: "mysql://reworkd_platform:reworkd_platform@db:3307/reworkd_platform"
+        DATABASE_URL: "mysql://ltl_platform:ltl_platform@db:3307/ltl_platform"
         NEXTAUTH_SECRET: "changeme"
     ports:
       - "3000:3000"
@@ -23,15 +23,15 @@ services:
     ports:
       - "8000:8000"
     environment:
-      REWORKD_PLATFORM_HOST: 0.0.0.0
-      REWORKD_PLATFORM_DB_HOST: db
-      REWORKD_PLATFORM_DB_PORT: "3307"
-      REWORKD_PLATFORM_DB_USER: "reworkd_platform"
-      REWORKD_PLATFORM_DB_PASS: "reworkd_platform"
-      REWORKD_PLATFORM_DB_BASE: "reworkd_platform"
-      REWORKD_PLATFORM_FF_MOCK_MODE_ENABLED: "true"
+      LTL_PLATFORM_HOST: 0.0.0.0
+      LTL_PLATFORM_DB_HOST: db
+      LTL_PLATFORM_DB_PORT: "3307"
+      LTL_PLATFORM_DB_USER: "ltl_platform"
+      LTL_PLATFORM_DB_PASS: "ltl_platform"
+      LTL_PLATFORM_DB_BASE: "ltl_platform"
+      LTL_PLATFORM_FF_MOCK_MODE_ENABLED: "true"
     labels:
-      dev.ergomake.env.replace-arg.REWORKD_PLATFORM_FRONTEND_URL: 'https://{{ services.next.url }}'
+      dev.ergomake.env.replace-arg.LTL_PLATFORM_FRONTEND_URL: 'https://{{ services.next.url }}'
 
   db:
     image: mysql:8.0
@@ -39,10 +39,10 @@ services:
     ports:
       - "3307"
     environment:
-      MYSQL_DATABASE: "reworkd_platform"
-      MYSQL_USER: "reworkd_platform"
-      MYSQL_PASSWORD: "reworkd_platform"
-      MYSQL_ROOT_PASSWORD: "reworkd_platform"
+      MYSQL_DATABASE: "ltl_platform"
+      MYSQL_USER: "ltl_platform"
+      MYSQL_PASSWORD: "ltl_platform"
+      MYSQL_ROOT_PASSWORD: "ltl_platform"
       MYSQL_TCP_PORT: 3307
     command: [ 'mysqld', '--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci' ]
 

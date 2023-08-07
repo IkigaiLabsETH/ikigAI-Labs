@@ -2,22 +2,22 @@ from typing import Any, Callable, Coroutine
 
 from fastapi import Depends
 
-from reworkd_platform.schemas.agent import AgentRun
-from reworkd_platform.schemas.user import UserBase
-from reworkd_platform.services.tokenizer.dependencies import get_token_service
-from reworkd_platform.services.tokenizer.token_service import TokenService
-from reworkd_platform.settings import settings
-from reworkd_platform.web.api.agent.agent_service.agent_service import AgentService
-from reworkd_platform.web.api.agent.agent_service.mock_agent_service import (
+from ltl_platform.schemas.agent import AgentRun
+from ltl_platform.schemas.user import UserBase
+from ltl_platform.services.tokenizer.dependencies import get_token_service
+from ltl_platform.services.tokenizer.token_service import TokenService
+from ltl_platform.settings import settings
+from ltl_platform.web.api.agent.agent_service.agent_service import AgentService
+from ltl_platform.web.api.agent.agent_service.mock_agent_service import (
     MockAgentService,
 )
-from reworkd_platform.web.api.agent.agent_service.open_ai_agent_service import (
+from ltl_platform.web.api.agent.agent_service.open_ai_agent_service import (
     OpenAIAgentService,
 )
-from reworkd_platform.web.api.agent.dependancies import get_agent_memory
-from reworkd_platform.web.api.agent.model_factory import create_model
-from reworkd_platform.web.api.dependencies import get_current_user
-from reworkd_platform.web.api.memory.memory import AgentMemory
+from ltl_platform.web.api.agent.dependancies import get_agent_memory
+from ltl_platform.web.api.agent.model_factory import create_model
+from ltl_platform.web.api.dependencies import get_current_user
+from ltl_platform.web.api.memory.memory import AgentMemory
 
 
 def get_agent_service(

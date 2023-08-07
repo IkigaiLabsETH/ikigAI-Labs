@@ -3,9 +3,9 @@ from typing import Optional
 from sqlalchemy import select, and_
 from sqlalchemy.orm import selectinload
 
-from reworkd_platform.db.crud.base import BaseCrud
-from reworkd_platform.db.models.auth import OrganizationUser
-from reworkd_platform.db.models.user import UserSession
+from ltl_platform.db.crud.base import BaseCrud
+from ltl_platform.db.models.auth import OrganizationUser
+from ltl_platform.db.models.user import UserSession
 
 
 class UserCrud(BaseCrud):

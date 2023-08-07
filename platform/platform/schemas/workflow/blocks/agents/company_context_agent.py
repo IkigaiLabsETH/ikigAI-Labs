@@ -3,8 +3,8 @@ from typing import Any
 import openai
 from loguru import logger
 
-from reworkd_platform.schemas.workflow.base import Block, BlockIOBase
-from reworkd_platform.settings import settings
+from ltl_platform.schemas.workflow.base import Block, BlockIOBase
+from ltl_platform.settings import settings
 
 
 class CompanyContextAgentInput(BlockIOBase):

@@ -5,10 +5,10 @@ from typing import Any, List
 from docx import Document
 from docx.shared import RGBColor
 
-from reworkd_platform.schemas.workflow.base import Block, BlockIOBase
-from reworkd_platform.services.aws.s3 import SimpleStorageService
-from reworkd_platform.services.sockets import websockets
-from reworkd_platform.settings import settings
+from ltl_platform.schemas.workflow.base import Block, BlockIOBase
+from ltl_platform.services.aws.s3 import SimpleStorageService
+from ltl_platform.services.sockets import websockets
+from ltl_platform.settings import settings
 
 
 class DiffDocInput(BlockIOBase):

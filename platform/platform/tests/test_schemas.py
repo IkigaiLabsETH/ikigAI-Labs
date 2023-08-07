@@ -1,6 +1,6 @@
 import pytest
 
-from reworkd_platform.schemas.agent import ModelSettings
+from ltl_platform.schemas.agent import ModelSettings
 
 
 @pytest.mark.parametrize(

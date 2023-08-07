@@ -1,1 +1,1 @@
-"""reworkd_platform package."""
+"""ltl_platform package."""

@@ -3,8 +3,8 @@ from typing import Dict, List, Optional, Set, Tuple, Union
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from reworkd_platform.db.models.workflow import WorkflowEdgeModel
-from reworkd_platform.schemas.workflow.base import EdgeUpsert
+from ltl_platform.db.models.workflow import WorkflowEdgeModel
+from ltl_platform.schemas.workflow.base import EdgeUpsert
 
 
 class EdgeCRUD:

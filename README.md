@@ -37,6 +37,10 @@ Whether you're looking to chat with a virtual assistant, improve your coding ski
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+- [ToDesktop](https://todesktop.com) - A simple way to make your web app into a beautiful desktop app
+- [DexieJS](https://dexie.org) - A Minimalistic Wrapper for IndexedDB
+- [Mantine](https://mantine.dev) - A fully featured React component library
+
 ## YouTube
 - Navigate to the root directory of the repository in your terminal.
 - Run the command `npm install` to install all the necessary dependencies.

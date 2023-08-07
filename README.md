@@ -31,6 +31,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+- get your api key from https://openai.com/api/
+
 You can check if Yarn is installed on your PC with the command `yarn --version`
 
 First, run the development server:

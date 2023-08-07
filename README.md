@@ -62,6 +62,19 @@ ChatGPT Plugin which renders text as ASCII art.
 - [@cloudflare/itty-router-openapi](https://github.com/cloudflare/itty-router-openapi)
 
 
+## Self-host using Docker
+
+```
+docker run --name chatpad -d -p 8080:80 ghcr.io/deiucanta/chatpad:latest
+```
+
+## Self-host using Docker with custom config
+
+```
+docker run --name chatpad -d -v `pwd`/config.json:/usr/share/nginx/html/config.json -p 8080:80 ghcr.io/deiucanta/chatpad:latest
+```
+
+
 ## LEX FRIDMAN PLUGIN
 
 This is a ChatGPT retrieval plugin which gives ChatGPT access to all of the transcriptions across 360+ episodes of the [Lex Fridman Podcast](https://lexfridman.com/podcast/). It contains a single API route.

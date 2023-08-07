@@ -1,4 +1,4 @@
-<h4 align="center"><b>Intelligent and Engaging AI</b></h4>
+<h4 align="left"><b>Intelligent and Engaging AI</b></h4>
 
 Harnesses the full potential of OpenAI's API to offer you an unparalleled AI experience. Whether you're looking to chat with a virtual assistant, improve your coding skills, or simply enjoy a fun and engaging conversation, our app has got you covered. Thank you for being a part of our community, and we look forward to serving you better in the future.
 
@@ -22,8 +22,8 @@ Harnesses the full potential of OpenAI's API to offer you an unparalleled AI exp
 - Unlimited local storage (desktop)
 - Runs locally (desktop)
 
-<p align="center">
-    <a href="https://bettergpt.chat" target="_blank"><img src="public/apple-touch-icon.png" alt="Better ChatGPT" width="100" /></a>
+<p align="left">
+    <a href="https://livethelife.tv" target="_blank"><img src="public/other/apple-touch-icon.png" alt="IkigaiLabsXYZ" width="100" /></a>
 </p>
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).

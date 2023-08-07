@@ -48,6 +48,41 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 Note that a few episodes may not have automated English transcriptions available, and that the project uses a HTML scraping solution for this, so a better solution would be to use Whisper to transcribe the episode's audio.
 
+## ASCII ART PLUGIN
+
+ChatGPT Plugin which renders text as ASCII art.
+
+[Live manifest file](https://chatgpt-plugin-ascii-art.transitive-bullshit.workers.dev/.well-known/ai-plugin.json)
+
+- [Cloudflare Workers](https://workers.cloudflare.com/)
+- [@cloudflare/itty-router-openapi](https://github.com/cloudflare/itty-router-openapi)
+
+
+## LEX FRIDMAN PLUGIN
+
+This is a ChatGPT retrieval plugin which gives ChatGPT access to all of the transcriptions across 360+ episodes of the [Lex Fridman Podcast](https://lexfridman.com/podcast/). It contains a single API route.
+
+
+- [Dexa API](https://dexa.ai/) (currently in private beta)
+
+Here's an example [live manifest file](https://chatgpt-plugin-dexa-lex-fridman.transitive-bullshit.workers.dev/.well-known/ai-plugin.json). API endpoints are protected so only OpenAI can access them.
+
+[Dexa](https://dexa.ai) has already done all the hard work of aggregating, transcribing, processing, and indexing the Lex Fridman Podcast (and many other podcasts!).
+
+Under the hood, they're doing **a lot** of really awesome, AI-powered data processing:
+
+- Transcriptions with speaker labels (diarization) for attribution (using [Assembly](https://assemblyai.com))
+- Automatic post-processing for common transcription errors
+- Advanced chunking based on metadata, topic detection, and sentence structure
+- Metadata extraction and enrichment with support for photos of speakers
+- Heirarchical clustering and summarization
+
+Lex Fridman Podcast stats from [Dexa](https://dexa.ai/) as of April 5, 2023:
+
+- Total number of episodes: 364
+- Total characters transcribed: 45,005,793
+- Total audio length: ~36 days
+
 ## Getting Started
 
 - get your api key from https://openai.com/api/

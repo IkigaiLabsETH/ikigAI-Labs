@@ -1,3 +1,31 @@
+<h4 align="center"><b>Intelligent and Engaging AI</b></h4>
+
+Harnesses the full potential of OpenAI's API to offer you an unparalleled AI experience. Whether you're looking to chat with a virtual assistant, improve your coding skills, or simply enjoy a fun and engaging conversation, our app has got you covered. Thank you for being a part of our community, and we look forward to serving you better in the future.
+
+# 🔥 Features
+
+- Prompt library
+- Organize chats into folders (with colours)
+- Filter chats and folders
+- Token count and pricing
+- ShareGPT integration
+- Custom model parameters (e.g. presence_penalty)
+- Chat as user / assistant / system
+- Edit, reorder and insert any messages, anywhere
+- Chat title generator
+- Save chat automatically to local storage
+- Import / Export chat
+- Download chat (markdown / image / json)
+- Sync to Google Drive
+- Azure OpenAI endpoint support
+- Multiple language support (i18n)
+- Unlimited local storage (desktop)
+- Runs locally (desktop)
+
+<p align="center">
+    <a href="https://bettergpt.chat" target="_blank"><img src="public/apple-touch-icon.png" alt="Better ChatGPT" width="100" /></a>
+</p>
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -313,6 +341,8 @@ Documentation: [https://beta.openai.com/docs/api-reference/embeddings](https://b
   console.log(gptResponse.data); // see index.d.ts interface Embedding
 })();
 ```
+
+<p align="center"><i>Did you enjoy using this? Give it some love with a star! 🌟</i></p>
 
 
 

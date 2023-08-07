@@ -291,4 +291,4 @@ and API interactions opens up exciting possibilities for AI agents in the future
 
 ## Extra Resources
 
-Are you interested in learning more about prompt engineering? We encourage you to check out other informational posts on our site, or you can check out the fantastic places below, or if you are interested in contributing, check out our [GitHub repo](https://github.com/reworkd/AgentGPT).
+Are you interested in learning more about prompt engineering? We encourage you to check out other informational posts on our site, or you can check out the fantastic places below, or if you are interested in contributing, check out our [GitHub repo](https://github.com/ltl/AgentGPT).

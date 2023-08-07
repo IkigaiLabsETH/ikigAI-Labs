@@ -22,11 +22,11 @@ We'd love to hear your feedback and engage with you on various platforms.
   <Card
     title="AgentGPT Website"
     icon="browser"
-    href="https://agentgpt.reworkd.ai/"
+    href="https://agentgpt.ltl.ai/"
   >
     Explore our official website.
   </Card>
-  <Card title="Github" icon="github" href="https://github.com/reworkd/AgentGPT">
+  <Card title="Github" icon="github" href="https://github.com/ltl/AgentGPT">
     Contribute and stay updated on our Github repository.
   </Card>
   <Card title="Discord" icon="discord" href="https://discord.gg/jdSBAnmdnY">

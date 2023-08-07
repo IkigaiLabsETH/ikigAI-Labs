@@ -4,7 +4,7 @@
     <a href="https://livethelife.tv" target="_blank"><img src="public/other/apple-touch-icon.png" alt="IkigaiLabsXYZ" width="100" /></a>
 </p>
 
-Whether you're looking to chat with a virtual assistant, improve your coding skills, or simply enjoy a fun and engaging conversation, our ceo has got you covered. Thank you for being a part of our community, and we look forward to serving you better in the future.
+Whether you're looking to chat with a virtual assistant, improve your coding skills, or simply enjoy a fun and engaging conversation, our ceo has got you covered. Thank you for being a part of ikigAI Labs.
 
 # 🔥 Features
 

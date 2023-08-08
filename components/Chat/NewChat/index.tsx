@@ -44,7 +44,7 @@ const NewChat = ({}: NewChatProps) => {
                         ikigAI Labs Assistant
                     </div>
                     <div className="text-body-1 text-n-4">
-                        Our bespoke ai assistant understands our codebase deeply.
+                        The ikigAI assistant understands our codebase deeply.
                     </div>
                 </div>
                 <div className="flex justify-between items-center mb-3">

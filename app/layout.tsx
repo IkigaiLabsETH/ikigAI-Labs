@@ -63,7 +63,7 @@ export default function RootLayout({
                 <meta property="og:type" content="Article" />
                 <meta
                     property="og:url"
-                    content="https://livethelife.tv"
+                    content="https://ai-alpha-six.vercel.app/"
                 />
                 <meta
                     property="og:image"
@@ -79,7 +79,7 @@ export default function RootLayout({
                 <meta property="og:title" content="ikigAI - Labs XYZ" />
                 <meta
                     property="og:url"
-                    content="https://livethelife.tv"
+                    content="https://ai-alpha-six.vercel.app/"
                 />
                 <meta
                     property="og:image"
@@ -93,7 +93,7 @@ export default function RootLayout({
                 <meta property="og:title" content="ikigAI - Labs XYZ" />
                 <meta
                     property="og:url"
-                    content="https://livethelife.tv"
+                    content="https://ai-alpha-six.vercel.app/"
                 />
                 <meta
                     property="og:image"

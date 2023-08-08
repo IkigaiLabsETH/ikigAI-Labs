@@ -1,4 +1,4 @@
-import { prettyObject } from "@/app/utils/format";
+import { prettyObject } from "@app/utils/format";
 import { NextRequest, NextResponse } from "next/server";
 import { auth } from "../../auth";
 import { requestOpenai } from "../../common";

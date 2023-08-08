@@ -24,7 +24,7 @@ The CEO is super friendly, however he lacks knowledge about gen art, web3, the I
 - Save chat automatically to local storage
 - Import / Export chat
 - Download chat (markdown / image / json)
-- Sync to Google Drive Anon
+- Sync to Google Drive and/or AWS S3
 - Integration with Google Search API
 - Azure OpenAI endpoint support
 - Replicate endpoint support

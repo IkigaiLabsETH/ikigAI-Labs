@@ -1,3 +1,10 @@
+const htmlCode = `<form>
+    <label for="file-upload">Choose a file:</label>
+    <input type="file" id="file-upload" name="file-upload">
+    <button type="submit">Upload</button>
+    <progress id="progress-bar" max="100" value="0"></progress>
+</form>`;
+
 const typescriptCode = `<form>
     <label for="file-upload">Choose a file:</label>
     <input type="file" id="file-upload" name="file-upload">
@@ -103,6 +110,12 @@ export const itemsCode = [
         language: "p5js",
         value: jsCode,
     },
+    {
+        id: "5",
+        title: "HTML",
+        language: "html",
+        value: htmlCode,
+    },
 ];
 
 export const code = {
@@ -118,7 +131,7 @@ export const actions = [
     },
     {
         id: "1",
-        content: "Can you explain how the P5js function works?",
+        content: "Can you explain how we can optimize this code?",
     },
     {
         id: "2",
@@ -126,6 +139,6 @@ export const actions = [
     },
     {
         id: "3",
-        content: "How can I add noise to the flow fields?",
+        content: "How can I add noise with a flow fields alorithm?",
     },
 ];

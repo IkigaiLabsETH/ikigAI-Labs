@@ -15,7 +15,8 @@ The CEO is super friendly, however he lacks knowledge about gen art, web3, the I
 - Organize chats into folders (with colours)
 - Filter chats and folders
 - Token count and pricing
-- ShareGPT integration
+- ShareGPT, Midjourney, WhatsApp integration
+- Camera Capture and Generative Voice AI
 - Custom model parameters (e.g. presence_penalty)
 - Chat as user / assistant / system
 - Edit, reorder and insert any messages, anywhere
@@ -23,8 +24,10 @@ The CEO is super friendly, however he lacks knowledge about gen art, web3, the I
 - Save chat automatically to local storage
 - Import / Export chat
 - Download chat (markdown / image / json)
-- Sync to Google Drive
+- Sync to Google Drive Anon
+- Integration with Google Search API
 - Azure OpenAI endpoint support
+- Replicate endpoint support
 - Multiple language support (i18n)
 - Unlimited local storage (desktop)
 - Runs locally (desktop)

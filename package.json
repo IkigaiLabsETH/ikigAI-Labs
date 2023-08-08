@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "homepage": "https://livethelife.tv",
   "license": "MIT",
-  "description": "Use OpenAI's API",
+  "description": "生 and OpenAI's API",
   "private": true,
   "scripts": {
     "dev": "next dev",

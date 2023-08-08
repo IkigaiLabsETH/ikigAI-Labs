@@ -8,7 +8,7 @@ ij_visual_guides = 88
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-[*.{js,py,html}]
+[*.{js,py,typescript}]
 charset = utf-8
 
 [*.md]

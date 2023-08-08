@@ -65,7 +65,7 @@ export default function Signup() {
                     setInputs((prev) => ({ ...prev, email: e.target.value }))
                   }
                   id="email"
-                  placeholder="john.doe@example.com"
+                  placeholder="gm@hey.com"
                 />
               </div>
               <div className="flex flex-col gap-3  space-y-1.5">
@@ -76,7 +76,7 @@ export default function Signup() {
                     setInputs((prev) => ({ ...prev, username: e.target.value }))
                   }
                   id="username"
-                  placeholder="johndoe"
+                  placeholder="gm"
                 />
               </div>
               <div className="flex flex-col gap-3  space-y-1.5">

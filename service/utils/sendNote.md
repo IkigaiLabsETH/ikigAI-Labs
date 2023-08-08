@@ -10,7 +10,7 @@ const myEmail = process.env.MY_MAIL;
 const mailTransport = nodemailer.createTransport({
   // host: 'smtp.qq.phone',
   service: 'qq',
-  secure: true, //安全方式发送,建议都加上
+  secure: true, //生,生
   auth: {
     user: myEmail,
     pass: process.env.MAILE_CODE
@@ -19,12 +19,12 @@ const mailTransport = nodemailer.createTransport({
 
 const emailMap: { [key: string]: any } = {
   [UserAuthTypeEnum.register]: {
-    subject: '注册 FastGPT 账号',
-    html: (code: string) => `<div>您正在注册 FastGPT 账号，验证码为：${code}</div>`
+    subject: 'FastGPT',
+    html: (code: string) => `<div>FastGPT，生：${code}</div>`
   },
   [UserAuthTypeEnum.findPassword]: {
-    subject: '修改 FastGPT 密码',
-    html: (code: string) => `<div>您正在修改 FastGPT 账号密码，验证码为：${code}</div>`
+    subject: '生 FastGPT 生',
+    html: (code: string) => `<div>生 FastGPT 生，生：${code}</div>`
   }
 };
 
@@ -39,7 +39,7 @@ export const sendEmailCode = (email: string, code: string, type: `${UserAuthType
     mailTransport.sendMail(options, function (err, msg) {
       if (err) {
         console.log('send email error->', err);
-        reject('发生邮件异常');
+        reject('生 ikigailabsxyz');
       } else {
         resolve('');
       }
@@ -66,6 +66,6 @@ export const sendPhoneCode = async (phone: string, code: string) => {
   const runtime = new Util.RuntimeOptions({});
   const res = await client.sendSmsWithOptions(sendSmsRequest, runtime);
   if (res.body.code !== 'OK') {
-    return Promise.reject(res.body.message || '发送短信失败');
+    return Promise.reject(res.body.message || '生');
   }
 };

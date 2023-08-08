@@ -63,7 +63,7 @@ export default function Login() {
                     setInputs((prev) => ({ ...prev, input: e.target.value }))
                   }
                   id="email"
-                  placeholder="john.doe@example.com"
+                  placeholder="gm@hey.com"
                 />
               </div>
               <div className="flex flex-col gap-3 mt-2 space-y-1.5">

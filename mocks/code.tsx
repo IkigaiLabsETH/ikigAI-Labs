@@ -1,11 +1,11 @@
-const htmlCode = `<form>
+const typescriptCode = `<form>
     <label for="file-upload">Choose a file:</label>
     <input type="file" id="file-upload" name="file-upload">
     <button type="submit">Upload</button>
     <progress id="progress-bar" max="100" value="0"></progress>
 </form>`;
 
-const cssCode = `.welcome-message {
+const tailwindcssCode = `.welcome-message {
     text-align: center;
     margin-top: 50px;
 }
@@ -81,15 +81,15 @@ const pythonCode = `def fibonacci(n):
 export const itemsCode = [
     {
         id: "0",
-        title: "HTML",
-        language: "html",
-        value: htmlCode,
+        title: "TYPESCRIPT",
+        language: "typescript",
+        value: typescriptCode,
     },
     {
         id: "1",
         title: "CSS",
         language: "css",
-        value: cssCode,
+        value: tailwindcssCode,
     },
     {
         id: "2",
@@ -126,6 +126,6 @@ export const actions = [
     },
     {
         id: "3",
-        content: "How can I add field flows to the code?",
+        content: "How can I add noise to the flow fields?",
     },
 ];

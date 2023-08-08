@@ -49,7 +49,7 @@ class editorStore {
 	@observable keywords = {
 		name: "Keywords",
 		attr: "keywords",
-		value: "", // JavaScript, HTML & CSS, Storybook
+		value: "", // Treejs, 5PJs, Typescript, JavaScript, HTML & CSS, TailwindCSS, Storybook
 		desc: "",
 		type: "text",
 		required: true,

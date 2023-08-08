@@ -12,14 +12,14 @@ const { definePartsStyle: switchPart, defineMultiStyleConfig: switchMultiStyle }
 const { definePartsStyle: selectPart, defineMultiStyleConfig: selectMultiStyle } =
   createMultiStyleConfigHelpers(selectAnatomy.keys);
 
-// modal 弹窗
+// modal 
 const ModalTheme = defineMultiStyleConfig({
   baseStyle: definePartsStyle({
     dialog: {}
   })
 });
 
-// 按键
+// 
 const Button = defineStyleConfig({
   baseStyle: {
     _active: {
@@ -167,7 +167,7 @@ const Select = selectMultiStyle({
   }
 });
 
-// 全局主题
+// 
 export const theme = extendTheme({
   styles: {
     global: {

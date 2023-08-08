@@ -44,14 +44,14 @@ export default function RootLayout({
                     name="description"
                     content="ikigAI Labs XYZ designed a bespoke AI-assistantto enhance the functionality of ChatGPT with context about the creating and curation of Digital Art, writing smart contracts, editorial content or code for the Ikigai Labs XYZ web3 app."
                 />
-                <meta name="product-name" content="ikigAI - Labs XYZ" />
+                <meta name="product-name" content="ikigAI - Labs XYZ - 生" />
                 {/* Twitter Card data */}
                 <meta name="twitter:card" content="summary" />
                 <meta name="twitter:site" content="@ikigailabseth" />
-                <meta name="twitter:title" content="ikigAI - Labs XYZ" />
+                <meta name="twitter:title" content="ikigAI - Labs XYZ - 生" />
                 <meta
                     name="twitter:description"
-                    content="ikigAI to F around and find out how to be creative with code"
+                    content="Let's find out how to be creative with AI, create dope AF gen art, publish content, design prompts and refactor our code with context."
                 />
                 <meta name="twitter:creator" content="@ikigailabseth" />
                 <meta
@@ -71,7 +71,7 @@ export default function RootLayout({
                 />
                 <meta
                     property="og:description"
-                    content="Designed to enhance the functionality of ChatGPT"
+                    content="Let's find out how to be creative with AI, create dope AF gen art, publish content, design prompts and refactor our code with context."
                 />
                 <meta property="og:site_name" content="ikigAI - Labs XYZ" />
                 <meta property="fb:admins" content="132951670226590" />
@@ -87,7 +87,7 @@ export default function RootLayout({
                 />
                 <meta
                     property="og:description"
-                    content="Designed to enhance the functionality of ChatGPT"
+                    content="Let's find out how to be creative with AI, create dope AF gen art, publish content, design prompts and refactor our code with context."
                 />
                 {/* Open Graph data for Pinterest */}
                 <meta property="og:title" content="ikigAI - Labs XYZ" />
@@ -101,7 +101,7 @@ export default function RootLayout({
                 />
                 <meta
                     property="og:description"
-                    content="Designed to enhance the functionality of ChatGPT"
+                    content="Let's find out how to be creative with AI, create dope AF gen art, publish content, design prompts and refactor our code with context."
                 />
             </head>
             <body

@@ -55,9 +55,9 @@ const EducationFeedbackPage: React.FC<EducationFeedbackPageProps> = ({ task }) =
   return (
     <Layout>
       <Chat background={task.fromColor}>
-        <Question content={task.title} files={['file-name.pdf', 'file-name.pdf', 'file-name.pdf']} />
+        <Question content={task.title} files={['livethelifetv.pdf', 'ikigailabs.pdf', 'goodvibesonly.pdf']} />
         {loading ? (
-          <Answer message="Generating answers for you…">
+          <Answer message="Generating feedback for you…">
             <div>Loading...</div>
           </Answer>
         ) : (

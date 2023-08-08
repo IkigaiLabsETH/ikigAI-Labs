@@ -15,7 +15,7 @@ The CEO is super friendly, however he lacks knowledge about gen art, web3, the I
 - Organize chats into folders (with colours)
 - Filter chats and folders
 - Token count and pricing
-- ShareGPT, Midjourney, WhatsApp integration
+- YouTube, Midjourney, WhatsApp integration
 - Camera Capture and Generative Voice AI
 - Custom model parameters (e.g. presence_penalty)
 - Chat as user / assistant / system

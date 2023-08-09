@@ -865,3 +865,11 @@ One interesting use case of `pgvector` is to use it in conjunction with OpenAI e
 For example, let's say you have a database of customer reviews and you want to find all the reviews that mention a particular product. You could use OpenAI embeddings to represent each review as a vector and store these vectors in a pgvector column. Then, you could perform a similarity search to find all the reviews that are similar to the vector representing the product name.
 
 This approach can be very powerful for applications that involve large amounts of text data, as it allows you to perform complex queries on the data using vector operations. However, it does require some additional setup and configuration compared to traditional SQL queries, so it may not be suitable for all use cases.
+
+### Storing Embeddings in Supabase
+	
+Supabase is an open-source firebase alternative using which businesses can generate a backend within 2 minutes. It enables users to start their projects with an authentication, Postgres database, instant APIs, storage and real-time subscription. Supabase also takes care of the organisations’ security and provides features of sign-ups and logins for protecting their data. Users can store, organise and share large files with ease, including videos and images. They can write down personalised codes and cron jobs without even scaling or deploying servers. It allows users to develop applications locally and then go on a big level when the organisation is ready. To work with Supabase, it’s not required for organisations to hire database experts. The platform is so simple that even non-techies can understand and use its full features easily. To an organisation, Supabase offers speed and reliability by managing their data in an efficient way.
+
+### Storing Embeddings in Pinecone
+
+Pinecone is a fully managed vector database that makes it easy to add semantic search to production applications. It combines vector search libraries, capabilities such as filtering, and distributed infrastructure to provide high performance and reliability at any scale. Machine Learning teams combine vector embeddings and vector search to create better applications that impact business results.

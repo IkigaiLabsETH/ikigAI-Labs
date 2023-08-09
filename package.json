@@ -19,6 +19,7 @@
   ],
   "dependencies": {
     "@dqbd/tiktoken": "^1.0.7",
+    "@cowprotocol/ts-dune-client": "^0.0.0-beta.2",
     "redis": "^4.6.5",
     "pdfjs-dist": "3.9.179",
     "@google-cloud/storage": "^6.9.4",

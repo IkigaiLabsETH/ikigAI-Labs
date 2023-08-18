@@ -1,3 +1,6 @@
+// we set up the OpenAI API client and implemented the necessary methods (getChats, sendChatRequest). 
+// we will need to replace OpenAIAPI with our actual OpenAI API client implementation.
+
 "use client";
 
 import { useState, useEffect } from "react";
@@ -8,14 +11,61 @@ import Icon from "@/components/Icon";
 import Users from "@/components/Users";
 import Search from "./Search";
 import Table from "./Table";
+import axios from "axios";
+import { fetchOpenAIResponse } from "app/api/openai/openai";
 
-import { chatRequest } from "@/mocks/chats";
+// import { chatRequest } from "@/mocks/chats";
+// import { OpenAIAPI } from "app/api/openai";
 
+// const openai = new sendChatRequest();
+
+// const handleSearchSubmit = async () => {
+//    try {
+//        const response = await openai.sendChatRequest(search);
+//        // Handle the response
+//        console.log("Chat response:", response);
+//    } catch (error) {
+//        console.error("Error sending chat request:", error);
+//    }
+// };
 
 const HomePage = () => {
+    const [replicateData, setReplicateData] = useState<any>(null);
+    const [openAIData, setOpenAIData] = useState<any>(null);
+    // const [chats, setChats] = useState([]);
     const [search, setSearch] = useState<string>("");
 
+// Make API calls to the Replicate and OpenAI APIs
+useEffect(() => {
+    // Define the user input or query to be sent to the APIs
+    const userInput = "User input or query goes here"; // Replace this with the actual user input or query
 
+    // Make the API call to the Replicate API
+    axios
+      .post("app/api/route", {
+        query: userInput,
+      })
+      .then((response) => {
+        // Handle the response data from the Replicate API
+        setReplicateData(response.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching data from Replicate API:", error);
+      });
+
+    // Make the API call to the OpenAI API
+    axios
+      .post("app/api/route", {
+        query: userInput,
+      })
+      .then((response) => {
+        // Handle the response data from the OpenAI API
+        setOpenAIData(response.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching data from OpenAI API:", error);
+      });
+  }, []);
       
 
     return (
@@ -65,11 +115,16 @@ const HomePage = () => {
                             addUser
                         />
                         <Search
-                            className="lg:absolute lg:left-0 lg:right-0 lg:bottom-0"
                             value={search}
                             onChange={(e: any) => setSearch(e.target.value)}
-                            onSubmit={() => console.log("Submit")}
+                            onSubmit={(e: React.FormEvent) => {
+                                e.preventDefault();
+                                // fetchFromOpenAI();
+                            }}
                         />
+
+
+
                     </div>
                     <div className="shrink-0 w-[18.5rem] ml-20 xl:ml-16 lg:w-full lg:ml-0 lg:mt-9">
                         <div className="flex justify-between items-center mb-3 pb-3 border-b border-n-3 dark:border-n-5">
@@ -109,7 +164,11 @@ const HomePage = () => {
                         </div>
                     </div>
                 </div>
-                <Table items={chatRequest} />
+                <Table items={search} />
+                {/* Display the output from the Replicate API */}
+                {replicateData && <div>{replicateData.output}</div>}
+                {/* Display the output from the OpenAI API */}
+                {openAIData && <div>{openAIData.output}</div>}
             </div>
         </Layout>
     );

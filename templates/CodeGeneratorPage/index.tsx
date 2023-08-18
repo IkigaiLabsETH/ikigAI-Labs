@@ -9,7 +9,8 @@ import Code from "@/components/Code";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-import { itemsCode, code, actions } from "@/mocks/code"; // how do we import real data vs mocks?
+// import { itemsCode, code, actions } from "@/mocks/code"; // how do we import real data vs mocks?
+// import realData from "@/data/realData"; // Replace with the path to your real data file
 
 const CodeGeneratorPage = () => {
     const [apiData, setApiData] = useState<any>(null);
@@ -42,68 +43,11 @@ const CodeGeneratorPage = () => {
                     message="GM Anon, I started coding …"
                     loading="Producing interesting curves with Flow Fields"
                 >
-                    <Code code={code} />
-                </Answer>
-                <Question content="Write a flow fields algorithm for my gen art series" />
-                <Answer
-                    content="Sure, here's an example of a flow fields algorithm that is somewhat inspired by Fidenza:"
-                    message="Starting to code in P5js for you…"
-                >
+
                     <Code
-                        items={itemsCode}
-                        content={
-                            <>
-                                This form allows the user to select a file from
-                                their device and upload it to the server. The
-                                form element contains a label element and an
-                                input element of type &quot;file&quot;, which is
-                                used to select the file to upload. The button
-                                element triggers the upload when clicked.
-                                <br></br>The CSS styles the form to make it look
-                                presentable and easy to use. The JS code listens
-                                for the form&apos;s submit event, prevents the
-                                default form submission behavior, creates a new
-                                FormData object, appends the selected file to
-                                the form data, and sends the form data to the
-                                server using a fetch request. Finally, the
-                                response from the server is logged to the
-                                console.
-                            </>
-                        }
-                        actions={actions}
-                    />
-                </Answer>
-                <Question content="Is there a way to render the drawing" />
-                <Answer
-                    content={
-                        <>
-                            Yes, you can render the drawing in
-                            P5js. Here&apos;s an updated version of the
-                            previous code with a{" "}
-                            <span className="font-semibold text-primary-3">
-                                P5js script
-                            </span>
-                            :
-                        </>
-                    }
-                    message="Give me a few seconds to think ser…"
-                >
-                    <Code
-                        items={itemsCode}
-                        content={
-                            <>
-                                In the P5js code, an
-                                object is created to handle the
-                                light renders. The upload event is listened to for
-                                progress updates, and the progress bar is
-                                rendered onchain. Finally, the load event is
-                                listened to for the server&apos;s response,
-                                which is logged to the console.
-                                <br></br>.
-                            </>
-                        }
-                        actions={actions}
-                        actionsCell
+                        items={apiData?.items}
+                        content={apiData?.content}
+                        actions={apiData?.actions}
                     />
                 </Answer>
                 {loading && <div>Loading...</div>}

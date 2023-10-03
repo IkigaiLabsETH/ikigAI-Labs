@@ -7,7 +7,7 @@
 
 ## ChatGPT4.20 + Midjourney V6.9 is a match made in heaven tbh.
 
-The CEO is super friendly, however he lacks knowledge about gen art, web3, the Ikigai Labs repo and our specific editorial style, and we feel he could become a better CEO as the use of the openai API allows us to remix it, add specific features, pull in specific web3 and NFT data and fix our own painpoints. 
+The CEO is super friendly, however he lacks knowledge about gen art, web3, the Ikigai Labs repo and our specific editorial style, and we feel he could become a better CEO as the use of the openai API allows us to remix it, add specific features, pull in specific web3 and NFT data and fix our own painpoints. There’s a very real scenario in the future where NFTs become a pivotal indicator for identity and authenticity amongst an incoming rush of deep fakes and AI propaganda spreading across social media.
 
 # 🔥 Features
 
